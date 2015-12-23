@@ -10,6 +10,7 @@
 		D5CB75A91C29A3B800412277 /* Jukebox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CB759E1C29A3B800412277 /* Jukebox.framework */; };
 		D5CB75AE1C29A3B800412277 /* JukeboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB75AD1C29A3B800412277 /* JukeboxTests.swift */; };
 		D5CB75BA1C29A4F700412277 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = D5CB75B91C29A4F700412277 /* .gitkeep */; };
+		D5DF495E1C2ABD2900343F13 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		D5CB75AD1C29A3B800412277 /* JukeboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeboxTests.swift; sourceTree = "<group>"; };
 		D5CB75AF1C29A3B800412277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5CB75B91C29A4F700412277 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				D5CB75B91C29A4F700412277 /* .gitkeep */,
+				D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DF495E1C2ABD2900343F13 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +320,7 @@
 		D5CB75B31C29A3B800412277 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -326,12 +331,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Jukebox;
 				PRODUCT_NAME = Jukebox;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D5CB75B41C29A3B800412277 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
