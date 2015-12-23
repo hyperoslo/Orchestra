@@ -6,6 +6,7 @@ public class AudioPlayer {
     case SoundNotFound
   }
 
+  let theme: Theme
   var player: AVAudioPlayer?
 
   var session: AVAudioSession {
@@ -13,6 +14,10 @@ public class AudioPlayer {
   }
 
   // MARK: - Initialization
+
+  public init(theme: Theme) {
+    self.theme = theme
+  }
 
   // MARK: - Start playback
 
