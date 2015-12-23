@@ -10,9 +10,9 @@
 		D5CB75A91C29A3B800412277 /* Jukebox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CB759E1C29A3B800412277 /* Jukebox.framework */; };
 		D5CB75AE1C29A3B800412277 /* JukeboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB75AD1C29A3B800412277 /* JukeboxTests.swift */; };
 		D5DF495E1C2ABD2900343F13 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */; };
-		D5DF49601C2ACBB800343F13 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF495F1C2ACBB800343F13 /* Sound.swift */; };
-		D5DF49621C2AD45200343F13 /* Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49611C2AD45200343F13 /* Jukebox.swift */; };
-		D5DF49641C2AD55800343F13 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49631C2AD55800343F13 /* Theme.swift */; };
+		D5DF49691C2AD6E700343F13 /* Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49661C2AD6E700343F13 /* Jukebox.swift */; };
+		D5DF496A1C2AD6E700343F13 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49671C2AD6E700343F13 /* Theme.swift */; };
+		D5DF496B1C2AD6E700343F13 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49681C2AD6E700343F13 /* Sound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +32,9 @@
 		D5CB75AD1C29A3B800412277 /* JukeboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeboxTests.swift; sourceTree = "<group>"; };
 		D5CB75AF1C29A3B800412277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
-		D5DF495F1C2ACBB800343F13 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
-		D5DF49611C2AD45200343F13 /* Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jukebox.swift; sourceTree = "<group>"; };
-		D5DF49631C2AD55800343F13 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D5DF49661C2AD6E700343F13 /* Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jukebox.swift; sourceTree = "<group>"; };
+		D5DF49671C2AD6E700343F13 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D5DF49681C2AD6E700343F13 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,12 +95,20 @@
 		D5CB75B81C29A4F700412277 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D5DF49651C2AD6D200343F13 /* Config */,
 				D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */,
-				D5DF495F1C2ACBB800343F13 /* Sound.swift */,
-				D5DF49611C2AD45200343F13 /* Jukebox.swift */,
-				D5DF49631C2AD55800343F13 /* Theme.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		D5DF49651C2AD6D200343F13 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D5DF49661C2AD6E700343F13 /* Jukebox.swift */,
+				D5DF49671C2AD6E700343F13 /* Theme.swift */,
+				D5DF49681C2AD6E700343F13 /* Sound.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,10 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DF496A1C2AD6E700343F13 /* Theme.swift in Sources */,
+				D5DF49691C2AD6E700343F13 /* Jukebox.swift in Sources */,
 				D5DF495E1C2ABD2900343F13 /* AudioPlayer.swift in Sources */,
-				D5DF49641C2AD55800343F13 /* Theme.swift in Sources */,
-				D5DF49601C2ACBB800343F13 /* Sound.swift in Sources */,
-				D5DF49621C2AD45200343F13 /* Jukebox.swift in Sources */,
+				D5DF496B1C2AD6E700343F13 /* Sound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
