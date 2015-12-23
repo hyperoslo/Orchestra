@@ -14,6 +14,8 @@
 		D5DF496D1C2B027F00343F13 /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF496C1C2B027F00343F13 /* ThemeList.swift */; };
 		D5DF49711C2B031E00343F13 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF496F1C2B031E00343F13 /* Sound.swift */; };
 		D5DF49721C2B031E00343F13 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49701C2B031E00343F13 /* Theme.swift */; };
+		D5DF49751C2B097200343F13 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF49731C2B097200343F13 /* Quick.framework */; };
+		D5DF49761C2B097200343F13 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF49741C2B097200343F13 /* Nimble.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		D5DF496C1C2B027F00343F13 /* ThemeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
 		D5DF496F1C2B031E00343F13 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		D5DF49701C2B031E00343F13 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D5DF49731C2B097200343F13 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		D5DF49741C2B097200343F13 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DF49751C2B097200343F13 /* Quick.framework in Frameworks */,
+				D5DF49761C2B097200343F13 /* Nimble.framework in Frameworks */,
 				D5CB75A91C29A3B800412277 /* Jukebox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +67,8 @@
 		D5CB75941C29A3B800412277 = {
 			isa = PBXGroup;
 			children = (
+				D5DF49731C2B097200343F13 /* Quick.framework */,
+				D5DF49741C2B097200343F13 /* Nimble.framework */,
 				D5CB75B81C29A4F700412277 /* Source */,
 				D5CB75A01C29A3B800412277 /* Jukebox */,
 				D5CB75AC1C29A3B800412277 /* JukeboxTests */,
@@ -160,6 +168,7 @@
 				D5CB75A41C29A3B800412277 /* Sources */,
 				D5CB75A51C29A3B800412277 /* Frameworks */,
 				D5CB75A61C29A3B800412277 /* Resources */,
+				D5DF49771C2B09A900343F13 /* Copy frameworks with Carthage */,
 			);
 			buildRules = (
 			);
@@ -223,6 +232,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D5DF49771C2B09A900343F13 /* Copy frameworks with Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			name = "Copy frameworks with Carthage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D5CB75991C29A3B800412277 /* Sources */ = {
@@ -383,6 +411,10 @@
 		D5CB75B61C29A3B800412277 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = JukeboxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxTests;
@@ -393,6 +425,10 @@
 		D5CB75B71C29A3B800412277 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = JukeboxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxTests;
