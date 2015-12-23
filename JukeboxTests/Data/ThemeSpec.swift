@@ -15,7 +15,7 @@ class ThemeSpec: QuickSpec {
       }
 
       describe("#bundlePrefix") {
-        it("has correct bundle prefix") {
+        it("has a valid bundle prefix") {
           expect(Theme.bundlePrefix).to(equal("Jukebox-Sounds"))
         }
       }

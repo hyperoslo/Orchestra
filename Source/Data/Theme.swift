@@ -1,4 +1,6 @@
-public struct Theme {
+import Foundation
+
+public struct Theme: Equatable {
 
   public static let bundlePrefix = "Jukebox-Sounds"
 
@@ -15,4 +17,11 @@ public struct Theme {
     self.name = name
     self.audioFormat = audioFormat
   }
+}
+
+public func ==(lhs: Theme, rhs: Theme) -> Bool {
+  let equal = lhs.name == rhs.name &&
+    lhs.audioFormat == rhs.audioFormat
+
+  return equal
 }
