@@ -2,7 +2,7 @@ import AVFoundation
 
 public class AudioPlayer {
 
-  enum Error: ErrorType {
+  public enum Error: ErrorType {
     case SoundNotFound
     case ThemeBundleNotFound
   }
