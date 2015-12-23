@@ -17,6 +17,7 @@
 		D5DF49821C2B0D2100343F13 /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49801C2B0D2100343F13 /* ThemeList.swift */; };
 		D5DF498A1C2B170500343F13 /* ThemeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49881C2B170500343F13 /* ThemeSpec.swift */; };
 		D5DF498B1C2B170500343F13 /* JukeboxSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49891C2B170500343F13 /* JukeboxSpec.swift */; };
+		D5DF498D1C2B1B3B00343F13 /* AudioPlayerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF498C1C2B1B3B00343F13 /* AudioPlayerSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		D5DF49801C2B0D2100343F13 /* ThemeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
 		D5DF49881C2B170500343F13 /* ThemeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeSpec.swift; sourceTree = "<group>"; };
 		D5DF49891C2B170500343F13 /* JukeboxSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JukeboxSpec.swift; sourceTree = "<group>"; };
+		D5DF498C1C2B1B3B00343F13 /* AudioPlayerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				D5DF49871C2B170500343F13 /* Data */,
+				D5DF498C1C2B1B3B00343F13 /* AudioPlayerSpec.swift */,
 				D5DF49891C2B170500343F13 /* JukeboxSpec.swift */,
 			);
 			path = Specs;
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DF498D1C2B1B3B00343F13 /* AudioPlayerSpec.swift in Sources */,
 				D5DF498A1C2B170500343F13 /* ThemeSpec.swift in Sources */,
 				D5DF498B1C2B170500343F13 /* JukeboxSpec.swift in Sources */,
 			);

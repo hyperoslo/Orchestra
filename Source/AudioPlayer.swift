@@ -22,7 +22,7 @@ public class AudioPlayer {
 
   // MARK: - Start playback
 
-  public func play(sound: Sound) throws {
+  public func play(sound: Sound) throws -> Bool {
     try session.setCategory(AVAudioSessionCategoryPlayback)
     try session.setActive(true)
 
@@ -45,36 +45,47 @@ public class AudioPlayer {
 
     player = try AVAudioPlayer(contentsOfURL: URL)
     player?.prepareToPlay()
-    player?.play()
+
+    return player?.play() == true
   }
 
-  public func playSafely(sound: Sound) {
+  public func playSafely(sound: Sound) -> Bool {
     do {
-      try play(sound)
+      return try play(sound)
     } catch {}
+
+    return false
   }
 
-  public func resume() {
+  public func resume() -> Bool {
     guard let player = player where !player.playing else {
-      return
+      return false
     }
 
-    player.play()
+    return player.play()
   }
 
   // MARK: - Stop playback
 
-  public func stop() {
+  public func stop() -> Bool {
+    guard player?.playing == true else {
+      return false
+    }
+
     player?.stop()
     player?.currentTime = 0
     player = nil
+
+    return true
   }
 
-  public func pause() {
+  public func pause() -> Bool {
     guard let player = player where player.playing else {
-      return
+      return false
     }
 
     player.pause()
+
+    return true
   }
 }
