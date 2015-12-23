@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D5CB75A91C29A3B800412277 /* Jukebox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CB759E1C29A3B800412277 /* Jukebox.framework */; };
-		D5CB75AE1C29A3B800412277 /* JukeboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB75AD1C29A3B800412277 /* JukeboxTests.swift */; };
 		D5DF495E1C2ABD2900343F13 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */; };
-		D5DF49691C2AD6E700343F13 /* Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49661C2AD6E700343F13 /* Jukebox.swift */; };
-		D5DF496D1C2B027F00343F13 /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF496C1C2B027F00343F13 /* ThemeList.swift */; };
 		D5DF49711C2B031E00343F13 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF496F1C2B031E00343F13 /* Sound.swift */; };
 		D5DF49721C2B031E00343F13 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49701C2B031E00343F13 /* Theme.swift */; };
 		D5DF49751C2B097200343F13 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF49731C2B097200343F13 /* Quick.framework */; };
 		D5DF49761C2B097200343F13 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF49741C2B097200343F13 /* Nimble.framework */; };
+		D5DF497E1C2B0C5D00343F13 /* ThemeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF497C1C2B0BAC00343F13 /* ThemeSpec.swift */; };
+		D5DF49811C2B0D2100343F13 /* Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF497F1C2B0D2100343F13 /* Jukebox.swift */; };
+		D5DF49821C2B0D2100343F13 /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49801C2B0D2100343F13 /* ThemeList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,15 +32,15 @@
 		D5CB759E1C29A3B800412277 /* Jukebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jukebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CB75A31C29A3B800412277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5CB75A81C29A3B800412277 /* Jukebox-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jukebox-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5CB75AD1C29A3B800412277 /* JukeboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeboxTests.swift; sourceTree = "<group>"; };
 		D5CB75AF1C29A3B800412277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
-		D5DF49661C2AD6E700343F13 /* Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jukebox.swift; sourceTree = "<group>"; };
-		D5DF496C1C2B027F00343F13 /* ThemeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
 		D5DF496F1C2B031E00343F13 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		D5DF49701C2B031E00343F13 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D5DF49731C2B097200343F13 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		D5DF49741C2B097200343F13 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		D5DF497C1C2B0BAC00343F13 /* ThemeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeSpec.swift; sourceTree = "<group>"; };
+		D5DF497F1C2B0D2100343F13 /* Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jukebox.swift; sourceTree = "<group>"; };
+		D5DF49801C2B0D2100343F13 /* ThemeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 		D5CB75AC1C29A3B800412277 /* JukeboxTests */ = {
 			isa = PBXGroup;
 			children = (
-				D5CB75AD1C29A3B800412277 /* JukeboxTests.swift */,
+				D5DF497B1C2B0BA200343F13 /* Data */,
 				D5CB75AF1C29A3B800412277 /* Info.plist */,
 			);
 			path = JukeboxTests;
@@ -105,20 +105,12 @@
 		D5CB75B81C29A4F700412277 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D5DF49651C2AD6D200343F13 /* Config */,
 				D5DF496E1C2B031E00343F13 /* Data */,
 				D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */,
+				D5DF49801C2B0D2100343F13 /* ThemeList.swift */,
+				D5DF497F1C2B0D2100343F13 /* Jukebox.swift */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		D5DF49651C2AD6D200343F13 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				D5DF49661C2AD6E700343F13 /* Jukebox.swift */,
-				D5DF496C1C2B027F00343F13 /* ThemeList.swift */,
-			);
-			path = Config;
 			sourceTree = "<group>";
 		};
 		D5DF496E1C2B031E00343F13 /* Data */ = {
@@ -126,6 +118,14 @@
 			children = (
 				D5DF496F1C2B031E00343F13 /* Sound.swift */,
 				D5DF49701C2B031E00343F13 /* Theme.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D5DF497B1C2B0BA200343F13 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D5DF497C1C2B0BAC00343F13 /* ThemeSpec.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -257,9 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5DF49691C2AD6E700343F13 /* Jukebox.swift in Sources */,
-				D5DF496D1C2B027F00343F13 /* ThemeList.swift in Sources */,
+				D5DF49811C2B0D2100343F13 /* Jukebox.swift in Sources */,
 				D5DF49721C2B031E00343F13 /* Theme.swift in Sources */,
+				D5DF49821C2B0D2100343F13 /* ThemeList.swift in Sources */,
 				D5DF495E1C2ABD2900343F13 /* AudioPlayer.swift in Sources */,
 				D5DF49711C2B031E00343F13 /* Sound.swift in Sources */,
 			);
@@ -269,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5CB75AE1C29A3B800412277 /* JukeboxTests.swift in Sources */,
+				D5DF497E1C2B0C5D00343F13 /* ThemeSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
