@@ -12,6 +12,8 @@ public class AudioPlayer {
     return AVAudioSession.sharedInstance()
   }
 
+  // MARK: - Start playback
+
   public func play(sound: Sound) throws {
     try session.setCategory(AVAudioSessionCategoryPlayback)
     try session.setActive(true)
@@ -46,6 +48,8 @@ public class AudioPlayer {
 
     player.play()
   }
+
+  // MARK: - Stop playback
 
   public func stop() {
     player?.stop()
