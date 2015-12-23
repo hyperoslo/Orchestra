@@ -2,6 +2,10 @@ import AVFoundation
 
 public class AudioPlayer {
 
+  enum Error: ErrorType {
+    case SoundNotFound
+  }
+
   var player: AVAudioPlayer?
 
   var session: AVAudioSession {
@@ -15,7 +19,7 @@ public class AudioPlayer {
     let bundle = NSBundle.mainBundle()
 
     guard let path = bundle.pathForResource(sound.rawValue, ofType: "aiff") else {
-      return
+      throw Error.SoundNotFound
     }
 
     let URL = NSURL(fileURLWithPath: path)
