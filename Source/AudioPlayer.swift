@@ -24,6 +24,10 @@ public class AudioPlayer {
 
     let URL = NSURL(fileURLWithPath: path)
 
+    if player?.playing == true {
+      stop()
+    }
+
     player = try AVAudioPlayer(contentsOfURL: URL)
     player?.prepareToPlay()
     player?.play()
@@ -33,5 +37,27 @@ public class AudioPlayer {
     do {
       try play(sound)
     } catch {}
+  }
+
+  public func resume() {
+    guard let player = player where !player.playing else {
+      return
+    }
+
+    player.play()
+  }
+
+  public func stop() {
+    player?.stop()
+    player?.currentTime = 0
+    player = nil
+  }
+
+  public func pause() {
+    guard let player = player where player.playing else {
+      return
+    }
+
+    player.pause()
   }
 }
