@@ -13,6 +13,7 @@
 		D5DF49691C2AD6E700343F13 /* Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49661C2AD6E700343F13 /* Jukebox.swift */; };
 		D5DF496A1C2AD6E700343F13 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49671C2AD6E700343F13 /* Theme.swift */; };
 		D5DF496B1C2AD6E700343F13 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49681C2AD6E700343F13 /* Sound.swift */; };
+		D5DF496D1C2B027F00343F13 /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF496C1C2B027F00343F13 /* ThemeList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		D5DF49661C2AD6E700343F13 /* Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jukebox.swift; sourceTree = "<group>"; };
 		D5DF49671C2AD6E700343F13 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D5DF49681C2AD6E700343F13 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		D5DF496C1C2B027F00343F13 /* ThemeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				D5DF49661C2AD6E700343F13 /* Jukebox.swift */,
 				D5DF49671C2AD6E700343F13 /* Theme.swift */,
 				D5DF49681C2AD6E700343F13 /* Sound.swift */,
+				D5DF496C1C2B027F00343F13 /* ThemeList.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			files = (
 				D5DF496A1C2AD6E700343F13 /* Theme.swift in Sources */,
 				D5DF49691C2AD6E700343F13 /* Jukebox.swift in Sources */,
+				D5DF496D1C2B027F00343F13 /* ThemeList.swift in Sources */,
 				D5DF495E1C2ABD2900343F13 /* AudioPlayer.swift in Sources */,
 				D5DF496B1C2AD6E700343F13 /* Sound.swift in Sources */,
 			);
