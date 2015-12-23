@@ -28,4 +28,10 @@ public class AudioPlayer {
     player?.prepareToPlay()
     player?.play()
   }
+
+  public func playSafely(sound: Sound) {
+    do {
+      try play(sound)
+    } catch {}
+  }
 }
