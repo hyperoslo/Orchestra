@@ -12,6 +12,8 @@ public class AudioPlayer {
     return AVAudioSession.sharedInstance()
   }
 
+  // MARK: - Initialization
+
   // MARK: - Start playback
 
   public func play(sound: Sound) throws {
