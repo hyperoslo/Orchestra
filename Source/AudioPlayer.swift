@@ -4,6 +4,7 @@ public class AudioPlayer {
 
   enum Error: ErrorType {
     case SoundNotFound
+    case ThemeBundleNotFound
   }
 
   public let theme: Theme
@@ -25,7 +26,12 @@ public class AudioPlayer {
     try session.setCategory(AVAudioSessionCategoryPlayback)
     try session.setActive(true)
 
-    let bundle = NSBundle.mainBundle()
+    let mainBundle = NSBundle.mainBundle()
+
+    guard let bundleURL = mainBundle.URLForResource(theme.rawValue, withExtension: "bundle"),
+      bundle = NSBundle(URL: bundleURL) else {
+        throw Error.ThemeBundleNotFound
+    }
 
     guard let path = bundle.pathForResource(sound.rawValue, ofType: "aiff") else {
       throw Error.SoundNotFound
