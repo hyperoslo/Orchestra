@@ -6,7 +6,7 @@ public class AudioPlayer {
     case SoundNotFound
   }
 
-  let theme: Theme
+  public let theme: Theme
   var player: AVAudioPlayer?
 
   var session: AVAudioSession {
