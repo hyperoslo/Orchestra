@@ -33,7 +33,7 @@ public class AudioPlayer {
         throw Error.ThemeBundleNotFound
     }
 
-    guard let path = bundle.pathForResource(sound.rawValue, ofType: "aiff") else {
+    guard let path = bundle.pathForResource(sound.rawValue, ofType: theme.audioFormat) else {
       throw Error.SoundNotFound
     }
 
