@@ -28,7 +28,7 @@ public class AudioPlayer {
 
     let mainBundle = NSBundle.mainBundle()
 
-    guard let bundleURL = mainBundle.URLForResource(theme.rawValue, withExtension: "bundle"),
+    guard let bundleURL = mainBundle.URLForResource(theme.bundleName, withExtension: "bundle"),
       bundle = NSBundle(URL: bundleURL) else {
         throw Error.ThemeBundleNotFound
     }
