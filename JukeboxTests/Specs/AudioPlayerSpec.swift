@@ -8,7 +8,7 @@ class AudioPlayerSpec: QuickSpec {
     describe("AudioPlayer") {
       var audioPlayer: AudioPlayer!
 
-      context("when a theme is not valid") {
+      context("when a theme bundle is not found") {
         beforeEach {
           let theme = Theme(
             name: "Amazing",
