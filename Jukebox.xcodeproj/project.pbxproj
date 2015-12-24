@@ -8,8 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D5CB75A91C29A3B800412277 /* Jukebox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CB759E1C29A3B800412277 /* Jukebox.framework */; };
-		D5CB75AE1C29A3B800412277 /* JukeboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CB75AD1C29A3B800412277 /* JukeboxTests.swift */; };
-		D5CB75BA1C29A4F700412277 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = D5CB75B91C29A4F700412277 /* .gitkeep */; };
+		D5DF495E1C2ABD2900343F13 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */; };
+		D5DF49711C2B031E00343F13 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF496F1C2B031E00343F13 /* Sound.swift */; };
+		D5DF49721C2B031E00343F13 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49701C2B031E00343F13 /* Theme.swift */; };
+		D5DF49751C2B097200343F13 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF49731C2B097200343F13 /* Quick.framework */; };
+		D5DF49761C2B097200343F13 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF49741C2B097200343F13 /* Nimble.framework */; };
+		D5DF49811C2B0D2100343F13 /* Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF497F1C2B0D2100343F13 /* Jukebox.swift */; };
+		D5DF49821C2B0D2100343F13 /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49801C2B0D2100343F13 /* ThemeList.swift */; };
+		D5DF498A1C2B170500343F13 /* ThemeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49881C2B170500343F13 /* ThemeSpec.swift */; };
+		D5DF498B1C2B170500343F13 /* JukeboxSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49891C2B170500343F13 /* JukeboxSpec.swift */; };
+		D5DF498D1C2B1B3B00343F13 /* AudioPlayerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF498C1C2B1B3B00343F13 /* AudioPlayerSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +34,17 @@
 		D5CB759E1C29A3B800412277 /* Jukebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jukebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CB75A31C29A3B800412277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5CB75A81C29A3B800412277 /* Jukebox-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jukebox-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5CB75AD1C29A3B800412277 /* JukeboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeboxTests.swift; sourceTree = "<group>"; };
 		D5CB75AF1C29A3B800412277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5CB75B91C29A4F700412277 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		D5DF496F1C2B031E00343F13 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		D5DF49701C2B031E00343F13 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D5DF49731C2B097200343F13 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		D5DF49741C2B097200343F13 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		D5DF497F1C2B0D2100343F13 /* Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jukebox.swift; sourceTree = "<group>"; };
+		D5DF49801C2B0D2100343F13 /* ThemeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
+		D5DF49881C2B170500343F13 /* ThemeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeSpec.swift; sourceTree = "<group>"; };
+		D5DF49891C2B170500343F13 /* JukeboxSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JukeboxSpec.swift; sourceTree = "<group>"; };
+		D5DF498C1C2B1B3B00343F13 /* AudioPlayerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DF49751C2B097200343F13 /* Quick.framework in Frameworks */,
+				D5DF49761C2B097200343F13 /* Nimble.framework in Frameworks */,
 				D5CB75A91C29A3B800412277 /* Jukebox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +71,8 @@
 		D5CB75941C29A3B800412277 = {
 			isa = PBXGroup;
 			children = (
+				D5DF49731C2B097200343F13 /* Quick.framework */,
+				D5DF49741C2B097200343F13 /* Nimble.framework */,
 				D5CB75B81C29A4F700412277 /* Source */,
 				D5CB75A01C29A3B800412277 /* Jukebox */,
 				D5CB75AC1C29A3B800412277 /* JukeboxTests */,
@@ -80,8 +100,8 @@
 		D5CB75AC1C29A3B800412277 /* JukeboxTests */ = {
 			isa = PBXGroup;
 			children = (
-				D5CB75AD1C29A3B800412277 /* JukeboxTests.swift */,
-				D5CB75AF1C29A3B800412277 /* Info.plist */,
+				D5DF49851C2B0DA700343F13 /* Supporting Files */,
+				D5DF49861C2B170500343F13 /* Specs */,
 			);
 			path = JukeboxTests;
 			sourceTree = "<group>";
@@ -89,9 +109,47 @@
 		D5CB75B81C29A4F700412277 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D5CB75B91C29A4F700412277 /* .gitkeep */,
+				D5DF496E1C2B031E00343F13 /* Data */,
+				D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */,
+				D5DF49801C2B0D2100343F13 /* ThemeList.swift */,
+				D5DF497F1C2B0D2100343F13 /* Jukebox.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		D5DF496E1C2B031E00343F13 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D5DF496F1C2B031E00343F13 /* Sound.swift */,
+				D5DF49701C2B031E00343F13 /* Theme.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D5DF49851C2B0DA700343F13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5CB75AF1C29A3B800412277 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5DF49861C2B170500343F13 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				D5DF49871C2B170500343F13 /* Data */,
+				D5DF498C1C2B1B3B00343F13 /* AudioPlayerSpec.swift */,
+				D5DF49891C2B170500343F13 /* JukeboxSpec.swift */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		D5DF49871C2B170500343F13 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D5DF49881C2B170500343F13 /* ThemeSpec.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +190,7 @@
 				D5CB75A41C29A3B800412277 /* Sources */,
 				D5CB75A51C29A3B800412277 /* Frameworks */,
 				D5CB75A61C29A3B800412277 /* Resources */,
+				D5DF49771C2B09A900343F13 /* Copy frameworks with Carthage */,
 			);
 			buildRules = (
 			);
@@ -184,7 +243,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5CB75BA1C29A4F700412277 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,11 +255,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D5DF49771C2B09A900343F13 /* Copy frameworks with Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			name = "Copy frameworks with Carthage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5CB75991C29A3B800412277 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DF49811C2B0D2100343F13 /* Jukebox.swift in Sources */,
+				D5DF49721C2B031E00343F13 /* Theme.swift in Sources */,
+				D5DF49821C2B0D2100343F13 /* ThemeList.swift in Sources */,
+				D5DF495E1C2ABD2900343F13 /* AudioPlayer.swift in Sources */,
+				D5DF49711C2B031E00343F13 /* Sound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5CB75AE1C29A3B800412277 /* JukeboxTests.swift in Sources */,
+				D5DF498D1C2B1B3B00343F13 /* AudioPlayerSpec.swift in Sources */,
+				D5DF498A1C2B170500343F13 /* ThemeSpec.swift in Sources */,
+				D5DF498B1C2B170500343F13 /* JukeboxSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +400,7 @@
 		D5CB75B31C29A3B800412277 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -326,12 +411,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Jukebox;
 				PRODUCT_NAME = Jukebox;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D5CB75B41C29A3B800412277 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -348,6 +435,10 @@
 		D5CB75B61C29A3B800412277 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = JukeboxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxTests;
@@ -358,6 +449,10 @@
 		D5CB75B71C29A3B800412277 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = JukeboxTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxTests;
