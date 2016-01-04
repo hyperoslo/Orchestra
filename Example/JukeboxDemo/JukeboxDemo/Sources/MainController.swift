@@ -3,13 +3,19 @@ import Cartography
 
 class MainController: UIViewController {
 
+  lazy var imageView: UIImageView = {
+    let image = UIImage(named: "hyperLogo")
+    let imageView = UIImageView(image: image)
+
+    return imageView
+    }()
+
   lazy var button: UIButton = { [unowned self] in
     let button = UIButton(type: .System)
-    button.backgroundColor = self.view.tintColor
-    button.layer.cornerRadius = 20
+    button.backgroundColor = UIColor.hex("F57D2D")
     button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
     button.titleLabel?.font = UIFont.systemFontOfSize(18)
-    button.setTitle(NSLocalizedString("Enter", comment: "").uppercaseString,
+    button.setTitle(NSLocalizedString("Open Source", comment: "").uppercaseString,
       forState: .Normal)
 
     button.addTarget(self, action: "buttonDidPress", forControlEvents: .TouchUpInside)
@@ -25,15 +31,25 @@ class MainController: UIViewController {
     title = "Hyper"
     view.backgroundColor = UIColor.whiteColor()
 
-    view.addSubview(button)
+    [imageView, button].forEach { view.addSubview($0) }
     setupConstrains()
   }
 
   // MARK: - Constrains
 
   func setupConstrains() {
-    constrain(button) { button in
-      button.center == button.superview!.center
+    let imageSize = imageView.frame.size
+
+    constrain(imageView, button) { imageView, button in
+      let superview = imageView.superview!
+
+      imageView.top == superview.top + 150
+      imageView.centerX == superview.centerX
+      imageView.width == imageSize.width
+      imageView.height == imageSize.height
+
+      button.top == imageView.bottom + 120
+      button.centerX == superview.centerX
       button.width == 200
       button.height == 50
     }
