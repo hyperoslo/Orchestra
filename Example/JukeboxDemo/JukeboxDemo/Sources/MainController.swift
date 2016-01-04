@@ -1,7 +1,7 @@
 import UIKit
 import Cartography
 
-class ViewController: UIViewController {
+class MainController: UIViewController {
 
   lazy var button: UIButton = { [unowned self] in
     let button = UIButton(type: .System)
