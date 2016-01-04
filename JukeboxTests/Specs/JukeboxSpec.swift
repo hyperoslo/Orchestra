@@ -29,7 +29,7 @@ class JukeboxSpec: QuickSpec {
 
       describe("#autoPlay") {
         it("is enabled by default") {
-          expect(Jukebox.autoPlay).to(beTrue())
+          expect(Jukebox.autoPlay).to(beFalse())
         }
       }
 
@@ -49,12 +49,12 @@ class JukeboxSpec: QuickSpec {
       describe("#reset") {
         it("restores defaults") {
           Jukebox.theme = amazingTheme
-          Jukebox.autoPlay = false
+          Jukebox.autoPlay = true
 
           Jukebox.reset()
 
           expect(Jukebox.theme).to(equal(Jukebox.defaultTheme))
-          expect(Jukebox.autoPlay).to(beTrue())
+          expect(Jukebox.autoPlay).to(beFalse())
         }
       }
     }

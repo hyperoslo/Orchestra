@@ -1,0 +1,10 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+pod 'Jukebox', path: '../../'
+pod 'Cartography'
+pod 'Hue', git: 'https://github.com/hyperoslo/Hue'
+pod 'Cache', git: 'https://github.com/hyperoslo/Cache'
+pod 'Imaginary', git: 'https://github.com/hyperoslo/Imaginary'
+
