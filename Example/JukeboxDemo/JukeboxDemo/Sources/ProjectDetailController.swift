@@ -7,6 +7,13 @@ class ProjectDetailController: UIViewController {
 
   let project: Project
 
+  lazy var scrollView: UIScrollView = {
+    let scrollView = UIScrollView(frame: CGRectZero)
+    scrollView.alwaysBounceVertical = true
+
+    return scrollView
+    }()
+
   lazy var imageView: UIImageView = {
     let imageView = UIImageView()
     imageView.contentMode = .ScaleAspectFit
@@ -48,10 +55,6 @@ class ProjectDetailController: UIViewController {
     fatalError("init(coder:) has not been implemented")
   }
 
-  deinit {
-    imageView.removeObserver(self, forKeyPath: "image")
-  }
-
   // MARK: - View Lifecycle
 
   override func viewDidLoad() {
@@ -60,11 +63,10 @@ class ProjectDetailController: UIViewController {
     title = project.name
     view.backgroundColor = UIColor.whiteColor()
 
+    view.addSubview(scrollView)
     [imageView, infoLabel, button].forEach {
-      view.addSubview($0)
+      scrollView.addSubview($0)
     }
-
-    imageView.addObserver(self, forKeyPath: "image", options: [.New, .Old], context: nil)
 
     imageView.setImage(project.imageURL)
     infoLabel.text = project.info
@@ -77,44 +79,35 @@ class ProjectDetailController: UIViewController {
   func setupConstrains() {
     infoLabel.sizeToFit()
 
+    constrain(scrollView) { scrollView in
+      scrollView.edges == scrollView.superview!.edges
+    }
+
     constrain(imageView, infoLabel, button) { imageView, infoLabel, button in
       let superview = imageView.superview!
 
-      imageView.top == superview.top + 79
-      imageView.leading == superview.leading + 30
-      imageView.trailing == superview.trailing - 30
+      imageView.top == superview.top + 15
+      imageView.centerX == superview.centerX
+      imageView.width == 300
       imageView.height == 150
 
       infoLabel.top == imageView.bottom + 30
-      infoLabel.leading == imageView.leading
-      infoLabel.trailing == imageView.trailing
+      infoLabel.left == imageView.left
+      infoLabel.right == imageView.right
 
-      button.top == infoLabel.bottom + 50
+      button.top == infoLabel.bottom + 40
       button.centerX == superview.centerX
       button.width == 200
       button.height == 50
     }
-  }
 
-  // MARK: - KVO
+    view.layoutIfNeeded()
 
-  override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
-    guard let imageView = object as? UIImageView,
-      image = imageView.image
-      where keyPath == "image"
-      else { return }
+    scrollView.contentSize = CGSize(
+      width: view.frame.width,
+      height: button.frame.maxY + 20)
 
-    dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0)) {
-      let (textColor, _, backgroundColor, _) = image.colors(imageView.frame.size)
-      dispatch_async(dispatch_get_main_queue()) { [weak self] in
-        guard let backgroundColor = backgroundColor,
-          textColor = textColor
-          else { return }
-
-        self?.view.backgroundColor = backgroundColor
-        self?.infoLabel.textColor = textColor
-      }
-    }
+    print(scrollView.contentSize)
   }
 
   // MARK: - Actions
