@@ -22,15 +22,11 @@ class MainController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    title = "Jukebox"
+    title = "Hyper"
     view.backgroundColor = UIColor.whiteColor()
 
     view.addSubview(button)
     setupConstrains()
-  }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
   }
 
   // MARK: - Constrains
@@ -47,6 +43,7 @@ class MainController: UIViewController {
 
   func buttonDidPress() {
     print("hello 1")
+    let controller = ProjectListController()
+    navigationController?.pushViewController(controller, animated: true)
   }
 }
-

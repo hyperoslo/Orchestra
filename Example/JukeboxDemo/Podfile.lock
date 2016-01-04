@@ -1,27 +1,68 @@
 PODS:
+  - Cache (1.0.0)
   - Cartography (0.6.0)
+  - Compass (1.2.4)
   - Hue (0.1.0)
+  - Imaginary (0.1.0):
+    - Cache
   - Jukebox (0.1.0)
+  - Spots (0.1.0):
+    - Imaginary
+    - Sugar
+    - Tailor
+  - Sugar (0.1.0)
+  - Tailor (0.2.0)
 
 DEPENDENCIES:
+  - Cache (from `https://github.com/hyperoslo/Cache`)
   - Cartography
+  - Compass
   - Hue (from `https://github.com/hyperoslo/Hue`)
+  - Imaginary (from `https://github.com/hyperoslo/Imaginary`)
   - Jukebox (from `../../`)
+  - Spots (from `https://github.com/hyperoslo/Spots`)
+  - Sugar (from `https://github.com/hyperoslo/Sugar`)
 
 EXTERNAL SOURCES:
+  Cache:
+    :git: https://github.com/hyperoslo/Cache
   Hue:
     :git: https://github.com/hyperoslo/Hue
+  Imaginary:
+    :git: https://github.com/hyperoslo/Imaginary
   Jukebox:
     :path: ../../
+  Spots:
+    :git: https://github.com/hyperoslo/Spots
+  Sugar:
+    :git: https://github.com/hyperoslo/Sugar
 
 CHECKOUT OPTIONS:
+  Cache:
+    :commit: ae5f3ceb0124a4183d4d2ecfa59652109612906c
+    :git: https://github.com/hyperoslo/Cache
   Hue:
     :commit: 1fcddfad166e60e5af3d5d3496f3e5dbceaf474c
     :git: https://github.com/hyperoslo/Hue
+  Imaginary:
+    :commit: 265eb5ddd1df41bbcc9f0f860e33649e831868d4
+    :git: https://github.com/hyperoslo/Imaginary
+  Spots:
+    :commit: c7f645be0cecd548ca93e6fb552b8ad67e532420
+    :git: https://github.com/hyperoslo/Spots
+  Sugar:
+    :commit: 7814da21e9f9450c08805706f51ee498e1514bc8
+    :git: https://github.com/hyperoslo/Sugar
 
 SPEC CHECKSUMS:
+  Cache: 78f58bc008313c7a1182967a2ebcb3de9fddecd4
   Cartography: 70af183a248547694a8cfaa6b989cb7e04589985
+  Compass: b7ce9d4c22226a4b22609c4acbcba6f1bcb53cfd
   Hue: 236ca79bd7426ab735bf0436589b8e505611a3fa
+  Imaginary: feaea646440c68a9b6ed66a46597d548b9a44207
   Jukebox: e3d9b5e60db9918da02944de93388ea50b3a4eb3
+  Spots: 9de65acd79cebc15b9f9756a86f7cab0104bc8fe
+  Sugar: 41ef7630a1568447e9ce1d30939cc732fdc65542
+  Tailor: 214469e948557ac67a0d3d93674aeaa686f74e4f
 
 COCOAPODS: 0.39.0
