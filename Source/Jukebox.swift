@@ -5,7 +5,7 @@ public class Jukebox {
 
   // MARK: - Configuration
 
-  public static var autoPlay = true
+  public static var autoPlay = false
 
   public static var theme: Theme = defaultTheme {
     didSet {
@@ -14,7 +14,7 @@ public class Jukebox {
   }
 
   public static func reset() {
-    autoPlay = true
+    autoPlay = false
     theme = defaultTheme
   }
 }

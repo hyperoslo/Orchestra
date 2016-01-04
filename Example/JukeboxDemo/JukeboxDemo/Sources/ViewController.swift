@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     button.setTitle(NSLocalizedString("Enter", comment: "").uppercaseString,
       forState: .Normal)
 
+    button.addTarget(self, action: "buttonDidPress", forControlEvents: .TouchUpInside)
+    button.addTarget(self, action: "buttonDidPressed", forControlEvents: .TouchUpInside)
+
     return button
     }()
 
@@ -39,6 +42,16 @@ class ViewController: UIViewController {
       button.width == 200
       button.height == 50
     }
+  }
+
+  // MARK: - Actions
+
+  func buttonDidPress() {
+    print("hello 1")
+  }
+
+  func buttonDidPressed() {
+    print("hello 2")
   }
 }
 
