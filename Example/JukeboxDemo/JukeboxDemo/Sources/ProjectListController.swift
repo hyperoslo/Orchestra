@@ -4,7 +4,7 @@ class ProjectListController: UITableViewController {
 
   static let reusableIdentifier = "ProjectCellIdentifier"
 
-  let projects = Project.projects
+  var projects = [Project]()
 
   // MARK: - View Lifecycle
 
@@ -12,6 +12,8 @@ class ProjectListController: UITableViewController {
     super.viewDidLoad()
 
     self.title = "Projects"
+    projects = Project.projects.sort { $0.name < $1.name }
+
     setupTableView()
   }
 
