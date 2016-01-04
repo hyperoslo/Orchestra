@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5797B181C3ACB2D00CCB487 /* UIControl+Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */; };
+		D5797B1B1C3ACC3900CCB487 /* MethodSwizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B1A1C3ACC3900CCB487 /* MethodSwizzler.swift */; };
 		D5CB75A91C29A3B800412277 /* Jukebox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CB759E1C29A3B800412277 /* Jukebox.framework */; };
 		D5DF495E1C2ABD2900343F13 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */; };
 		D5DF49711C2B031E00343F13 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF496F1C2B031E00343F13 /* Sound.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Jukebox.swift"; sourceTree = "<group>"; };
+		D5797B1A1C3ACC3900CCB487 /* MethodSwizzler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodSwizzler.swift; sourceTree = "<group>"; };
 		D5CB759E1C29A3B800412277 /* Jukebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jukebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CB75A31C29A3B800412277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5CB75A81C29A3B800412277 /* Jukebox-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jukebox-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D5797B161C3ACB1700CCB487 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D5797B191C3ACC2B00CCB487 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D5797B1A1C3ACC3900CCB487 /* MethodSwizzler.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		D5CB75941C29A3B800412277 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +129,8 @@
 		D5CB75B81C29A4F700412277 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D5797B191C3ACC2B00CCB487 /* Helpers */,
+				D5797B161C3ACB1700CCB487 /* Extensions */,
 				D5DF496E1C2B031E00343F13 /* Data */,
 				D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */,
 				D5DF49801C2B0D2100343F13 /* ThemeList.swift */,
@@ -281,7 +303,9 @@
 			files = (
 				D5DF49811C2B0D2100343F13 /* Jukebox.swift in Sources */,
 				D5DF49721C2B031E00343F13 /* Theme.swift in Sources */,
+				D5797B1B1C3ACC3900CCB487 /* MethodSwizzler.swift in Sources */,
 				D5DF49821C2B0D2100343F13 /* ThemeList.swift in Sources */,
+				D5797B181C3ACB2D00CCB487 /* UIControl+Jukebox.swift in Sources */,
 				D5DF495E1C2ABD2900343F13 /* AudioPlayer.swift in Sources */,
 				D5DF49711C2B031E00343F13 /* Sound.swift in Sources */,
 			);

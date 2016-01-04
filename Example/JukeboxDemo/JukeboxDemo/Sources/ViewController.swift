@@ -13,7 +13,6 @@ class ViewController: UIViewController {
       forState: .Normal)
 
     button.addTarget(self, action: "buttonDidPress", forControlEvents: .TouchUpInside)
-    button.addTarget(self, action: "buttonDidPressed", forControlEvents: .TouchUpInside)
 
     return button
     }()
@@ -48,10 +47,6 @@ class ViewController: UIViewController {
 
   func buttonDidPress() {
     print("hello 1")
-  }
-
-  func buttonDidPressed() {
-    print("hello 2")
   }
 }
 
