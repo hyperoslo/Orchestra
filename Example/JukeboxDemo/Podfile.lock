@@ -1,0 +1,27 @@
+PODS:
+  - Cartography (0.6.0)
+  - Hue (0.1.0)
+  - Jukebox (0.1.0)
+
+DEPENDENCIES:
+  - Cartography
+  - Hue (from `https://github.com/hyperoslo/Hue`)
+  - Jukebox (from `../../`)
+
+EXTERNAL SOURCES:
+  Hue:
+    :git: https://github.com/hyperoslo/Hue
+  Jukebox:
+    :path: ../../
+
+CHECKOUT OPTIONS:
+  Hue:
+    :commit: 1fcddfad166e60e5af3d5d3496f3e5dbceaf474c
+    :git: https://github.com/hyperoslo/Hue
+
+SPEC CHECKSUMS:
+  Cartography: 70af183a248547694a8cfaa6b989cb7e04589985
+  Hue: 236ca79bd7426ab735bf0436589b8e505611a3fa
+  Jukebox: e3d9b5e60db9918da02944de93388ea50b3a4eb3
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,7 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+pod 'Jukebox', path: '../../'
+pod 'Hue', git: 'https://github.com/hyperoslo/Hue'
+pod 'Cartography'
