@@ -106,8 +106,6 @@ class ProjectDetailController: UIViewController {
     scrollView.contentSize = CGSize(
       width: view.frame.width,
       height: button.frame.maxY + 20)
-
-    print(scrollView.contentSize)
   }
 
   // MARK: - Actions

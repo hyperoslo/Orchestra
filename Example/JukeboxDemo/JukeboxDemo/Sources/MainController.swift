@@ -58,7 +58,6 @@ class MainController: UIViewController {
   // MARK: - Actions
 
   func buttonDidPress() {
-    print("hello 1")
     let controller = ProjectListController()
     navigationController?.pushViewController(controller, animated: true)
   }

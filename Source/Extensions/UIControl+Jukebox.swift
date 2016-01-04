@@ -34,6 +34,5 @@ extension UIButton {
   }
 
   func playSound() {
-    print("Play sound")
   }
 }
