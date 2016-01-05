@@ -16,13 +16,13 @@ class ThemeSpec: QuickSpec {
 
       describe("#bundlePrefix") {
         it("has a valid bundle prefix") {
-          expect(Theme.bundlePrefix).to(equal("Jukebox-Sounds"))
+          expect(Theme.bundlePrefix).to(equal("JukeboxSounds"))
         }
       }
 
       describe(".bundleName") {
         it("build bundle name based on prefix and theme name") {
-          expect(theme.bundleName).to(equal("\(Theme.bundlePrefix)-\(theme.name)"))
+          expect(theme.bundleName).to(equal("\(Theme.bundlePrefix)\(theme.name)"))
         }
       }
 

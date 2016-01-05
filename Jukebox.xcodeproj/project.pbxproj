@@ -34,7 +34,7 @@
 
 /* Begin PBXFileReference section */
 		D52D724C1C3BF710009A4426 /* JukeboxSoundsHyper.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JukeboxSoundsHyper.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		D52D724E1C3BF710009A4426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D52D72541C3BF846009A4426 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Jukebox.swift"; sourceTree = "<group>"; };
 		D5797B1A1C3ACC3900CCB487 /* MethodSwizzler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodSwizzler.swift; sourceTree = "<group>"; };
 		D5CB759E1C29A3B800412277 /* Jukebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jukebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,12 +81,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D52D724D1C3BF710009A4426 /* JukeboxSoundsHyper */ = {
+		D52D72521C3BF846009A4426 /* JukeboxSounds */ = {
 			isa = PBXGroup;
 			children = (
-				D52D724E1C3BF710009A4426 /* Info.plist */,
+				D52D72531C3BF846009A4426 /* Hyper */,
 			);
-			path = JukeboxSoundsHyper;
+			path = JukeboxSounds;
+			sourceTree = "<group>";
+		};
+		D52D72531C3BF846009A4426 /* Hyper */ = {
+			isa = PBXGroup;
+			children = (
+				D52D72541C3BF846009A4426 /* Info.plist */,
+			);
+			path = Hyper;
 			sourceTree = "<group>";
 		};
 		D5797B161C3ACB1700CCB487 /* Extensions */ = {
@@ -113,7 +121,7 @@
 				D5CB75B81C29A4F700412277 /* Source */,
 				D5CB75A01C29A3B800412277 /* Jukebox */,
 				D5CB75AC1C29A3B800412277 /* JukeboxTests */,
-				D52D724D1C3BF710009A4426 /* JukeboxSoundsHyper */,
+				D52D72521C3BF846009A4426 /* JukeboxSounds */,
 				D5CB759F1C29A3B800412277 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -391,7 +399,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = JukeboxSoundsHyper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JukeboxSounds/Hyper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxSoundsHyper;
@@ -407,7 +415,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = JukeboxSoundsHyper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JukeboxSounds/Hyper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxSoundsHyper;
@@ -549,7 +557,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = JukeboxTests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JukeboxTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -563,7 +571,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = JukeboxTests/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JukeboxTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
