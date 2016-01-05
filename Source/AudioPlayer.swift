@@ -58,7 +58,9 @@ public class AudioPlayer {
   public func playSafely(sound: Sound) -> Bool {
     do {
       return try play(sound)
-    } catch {}
+    } catch {
+      print(error)
+    }
 
     return false
   }
