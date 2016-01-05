@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Source/**/*'
 
   s.resource_bundles = {
-    'JukeboxSoundsHyper' => ['JukeboxSounds/Hyper/*.{aiff}']
+    'SoundsHyper' => ['JukeboxSounds/Hyper/*.{aif}']
   }
 
   s.frameworks = 'UIKit', 'AVFoundation'

@@ -34,6 +34,12 @@ extension UIButton {
   }
 
   func playSound() {
-    Jukebox.player.playSafely(.Select)
+    //if Jukebox.autoPlay {
+      do {
+        try Jukebox.player.play(.Select)
+      } catch {
+        print(error)
+      }
+    //}
   }
 }

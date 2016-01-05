@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D52D72701C3C0686009A4426 /* soundBack.aif in Resources */ = {isa = PBXBuildFile; fileRef = D52D72661C3C0680009A4426 /* soundBack.aif */; };
-		D52D72711C3C0686009A4426 /* soundError.aif in Resources */ = {isa = PBXBuildFile; fileRef = D52D72671C3C0680009A4426 /* soundError.aif */; };
-		D52D72721C3C0686009A4426 /* soundForward.aif in Resources */ = {isa = PBXBuildFile; fileRef = D52D72681C3C0680009A4426 /* soundForward.aif */; };
-		D52D72731C3C0686009A4426 /* soundSelect.aif in Resources */ = {isa = PBXBuildFile; fileRef = D52D72691C3C0680009A4426 /* soundSelect.aif */; };
-		D52D72741C3C0686009A4426 /* soundWarning.aif in Resources */ = {isa = PBXBuildFile; fileRef = D52D726A1C3C0680009A4426 /* soundWarning.aif */; };
+		D51E7AE31C3C16EC008520D6 /* soundBack.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7AD91C3C16DF008520D6 /* soundBack.aif */; };
+		D51E7AE41C3C16EC008520D6 /* soundError.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7ADA1C3C16DF008520D6 /* soundError.aif */; };
+		D51E7AE51C3C16EC008520D6 /* soundForward.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7ADB1C3C16DF008520D6 /* soundForward.aif */; };
+		D51E7AE61C3C16EC008520D6 /* soundSelect.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7ADC1C3C16DF008520D6 /* soundSelect.aif */; };
+		D51E7AE71C3C16EC008520D6 /* soundWarning.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7ADD1C3C16DF008520D6 /* soundWarning.aif */; };
+		D51E7AEB1C3C1B2E008520D6 /* JukeboxSoundsHyper.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D52D724C1C3BF710009A4426 /* JukeboxSoundsHyper.bundle */; };
 		D5797B181C3ACB2D00CCB487 /* UIControl+Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */; };
 		D5797B1B1C3ACC3900CCB487 /* MethodSwizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B1A1C3ACC3900CCB487 /* MethodSwizzler.swift */; };
 		D5CB75A91C29A3B800412277 /* Jukebox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CB759E1C29A3B800412277 /* Jukebox.framework */; };
@@ -38,12 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D51E7AD91C3C16DF008520D6 /* soundBack.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundBack.aif; sourceTree = "<group>"; };
+		D51E7ADA1C3C16DF008520D6 /* soundError.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundError.aif; sourceTree = "<group>"; };
+		D51E7ADB1C3C16DF008520D6 /* soundForward.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundForward.aif; sourceTree = "<group>"; };
+		D51E7ADC1C3C16DF008520D6 /* soundSelect.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundSelect.aif; sourceTree = "<group>"; };
+		D51E7ADD1C3C16DF008520D6 /* soundWarning.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundWarning.aif; sourceTree = "<group>"; };
 		D52D724C1C3BF710009A4426 /* JukeboxSoundsHyper.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JukeboxSoundsHyper.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		D52D72661C3C0680009A4426 /* soundBack.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundBack.aif; sourceTree = "<group>"; };
-		D52D72671C3C0680009A4426 /* soundError.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundError.aif; sourceTree = "<group>"; };
-		D52D72681C3C0680009A4426 /* soundForward.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundForward.aif; sourceTree = "<group>"; };
-		D52D72691C3C0680009A4426 /* soundSelect.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundSelect.aif; sourceTree = "<group>"; };
-		D52D726A1C3C0680009A4426 /* soundWarning.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundWarning.aif; sourceTree = "<group>"; };
 		D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Jukebox.swift"; sourceTree = "<group>"; };
 		D5797B1A1C3ACC3900CCB487 /* MethodSwizzler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodSwizzler.swift; sourceTree = "<group>"; };
 		D5CB759E1C29A3B800412277 /* Jukebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jukebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,22 +91,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D52D72521C3BF846009A4426 /* JukeboxSounds */ = {
+		D51E7AD71C3C16DF008520D6 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				D52D72651C3C0680009A4426 /* Hyper */,
+				D51E7AD81C3C16DF008520D6 /* Hyper */,
 			);
-			path = JukeboxSounds;
+			path = Sounds;
 			sourceTree = "<group>";
 		};
-		D52D72651C3C0680009A4426 /* Hyper */ = {
+		D51E7AD81C3C16DF008520D6 /* Hyper */ = {
 			isa = PBXGroup;
 			children = (
-				D52D72661C3C0680009A4426 /* soundBack.aif */,
-				D52D72671C3C0680009A4426 /* soundError.aif */,
-				D52D72681C3C0680009A4426 /* soundForward.aif */,
-				D52D72691C3C0680009A4426 /* soundSelect.aif */,
-				D52D726A1C3C0680009A4426 /* soundWarning.aif */,
+				D51E7AD91C3C16DF008520D6 /* soundBack.aif */,
+				D51E7ADA1C3C16DF008520D6 /* soundError.aif */,
+				D51E7ADB1C3C16DF008520D6 /* soundForward.aif */,
+				D51E7ADC1C3C16DF008520D6 /* soundSelect.aif */,
+				D51E7ADD1C3C16DF008520D6 /* soundWarning.aif */,
 			);
 			path = Hyper;
 			sourceTree = "<group>";
@@ -134,7 +135,7 @@
 				D5CB75B81C29A4F700412277 /* Source */,
 				D5CB75A01C29A3B800412277 /* Jukebox */,
 				D5CB75AC1C29A3B800412277 /* JukeboxTests */,
-				D52D72521C3BF846009A4426 /* JukeboxSounds */,
+				D51E7AD71C3C16DF008520D6 /* Sounds */,
 				D5CB759F1C29A3B800412277 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -326,11 +327,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D52D72741C3C0686009A4426 /* soundWarning.aif in Resources */,
-				D52D72701C3C0686009A4426 /* soundBack.aif in Resources */,
-				D52D72711C3C0686009A4426 /* soundError.aif in Resources */,
-				D52D72731C3C0686009A4426 /* soundSelect.aif in Resources */,
-				D52D72721C3C0686009A4426 /* soundForward.aif in Resources */,
+				D51E7AE71C3C16EC008520D6 /* soundWarning.aif in Resources */,
+				D51E7AE31C3C16EC008520D6 /* soundBack.aif in Resources */,
+				D51E7AE41C3C16EC008520D6 /* soundError.aif in Resources */,
+				D51E7AE61C3C16EC008520D6 /* soundSelect.aif in Resources */,
+				D51E7AE51C3C16EC008520D6 /* soundForward.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51E7AEB1C3C1B2E008520D6 /* JukeboxSoundsHyper.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,13 +420,14 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = NO;
 				INFOPLIST_FILE = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxSoundsHyper;
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SYMROOT = build;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -434,14 +437,15 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxSoundsHyper;
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SYMROOT = build;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -608,6 +612,7 @@
 				D52D72501C3BF710009A4426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5CB75981C29A3B800412277 /* Build configuration list for PBXProject "Jukebox" */ = {
 			isa = XCConfigurationList;

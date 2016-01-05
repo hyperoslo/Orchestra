@@ -2,5 +2,5 @@ public struct ThemeList {
 
   static let hyper = Theme(
     name: "Hyper",
-    audioFormat: "aiff")
+    audioFormat: "aif")
 }

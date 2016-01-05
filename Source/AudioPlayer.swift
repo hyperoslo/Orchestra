@@ -26,11 +26,23 @@ public class AudioPlayer {
     try session.setCategory(AVAudioSessionCategoryPlayback)
     try session.setActive(true)
 
-    let mainBundle = NSBundle.mainBundle()
+    let mainBundle = NSBundle(forClass: AudioPlayer.self)
+    //var path = bundle.pathForResource(locale, ofType: Config.pathExtension, inDirectory: Config.dirPath)
 
-    guard let bundleURL = mainBundle.URLForResource(theme.bundleName, withExtension: "bundle"),
-      bundle = NSBundle(URL: bundleURL) else {
-        throw Error.ThemeBundleNotFound
+    //if path == nil {
+    //  path = bundle.pathForResource(locale, ofType: Config.pathExtension, inDirectory: Config.dirFrameworkPath)
+    //}
+
+    guard let resourcePath = mainBundle.resourcePath else {
+      throw Error.ThemeBundleNotFound
+    }
+
+    let bundlePath = resourcePath + "/\(theme.bundleName).bundle"
+
+    print(bundlePath)
+
+    guard let bundle = NSBundle(path: bundlePath) else {
+      throw Error.ThemeBundleNotFound
     }
 
     guard let path = bundle.pathForResource(sound.rawValue, ofType: theme.audioFormat) else {
