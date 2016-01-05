@@ -11,7 +11,7 @@ class ProjectListController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    self.title = "Projects"
+    self.title = "Open Source"
     projects = Project.projects.sort { $0.name < $1.name }
 
     setupTableView()
