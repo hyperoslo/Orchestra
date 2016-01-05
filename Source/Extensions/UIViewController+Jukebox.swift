@@ -20,7 +20,7 @@ extension UIViewController {
   func jukebox_viewWillAppear(animated: Bool) {
     jukebox_viewWillAppear(animated)
 
-    guard animated && Jukebox.autoPlay else { return }
+    guard animated else { return }
 
     var sound: Sound?
 
@@ -30,13 +30,9 @@ extension UIViewController {
       sound = .Present
     }
 
-    guard let soundToPlay = sound else { return }
+    guard let autoSound = sound else { return }
 
-    do {
-      try Jukebox.player.play(soundToPlay)
-    } catch {
-      print(error)
-    }
+    Jukebox.autoPlay(autoSound)
   }
 
   func jukebox_viewWillDisappear(animated: Bool) {
@@ -52,13 +48,9 @@ extension UIViewController {
       sound = .Dismiss
     }
 
-    guard let soundToPlay = sound else { return }
+    guard let autoSound = sound else { return }
 
-    do {
-      try Jukebox.player.play(soundToPlay)
-    } catch {
-      print(error)
-    }
+    Jukebox.autoPlay(autoSound)
   }
 }
 
