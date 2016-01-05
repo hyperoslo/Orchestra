@@ -25,9 +25,9 @@ extension UIViewController {
     var sound: Sound?
 
     if isMovingToParentViewController() {
-      sound = .Forward
+      sound = .Push
     } else if isBeingPresented() {
-      sound = .Forward
+      sound = .Present
     }
 
     guard let soundToPlay = sound else { return }
@@ -47,9 +47,9 @@ extension UIViewController {
     var sound: Sound?
 
     if isMovingFromParentViewController() {
-      sound = .Back
+      sound = .Pop
     } else if isBeingDismissed() {
-      sound = .Back
+      sound = .Dismiss
     }
 
     guard let soundToPlay = sound else { return }
