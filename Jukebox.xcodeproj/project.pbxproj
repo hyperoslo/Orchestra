@@ -33,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D52D724C1C3BF710009A4426 /* JukeboxSoundsHyper.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JukeboxSoundsHyper.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52D724E1C3BF710009A4426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Jukebox.swift"; sourceTree = "<group>"; };
 		D5797B1A1C3ACC3900CCB487 /* MethodSwizzler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodSwizzler.swift; sourceTree = "<group>"; };
 		D5CB759E1C29A3B800412277 /* Jukebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jukebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +54,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D52D72491C3BF710009A4426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5CB759A1C29A3B800412277 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D52D724D1C3BF710009A4426 /* JukeboxSoundsHyper */ = {
+			isa = PBXGroup;
+			children = (
+				D52D724E1C3BF710009A4426 /* Info.plist */,
+			);
+			path = JukeboxSoundsHyper;
+			sourceTree = "<group>";
+		};
 		D5797B161C3ACB1700CCB487 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +113,7 @@
 				D5CB75B81C29A4F700412277 /* Source */,
 				D5CB75A01C29A3B800412277 /* Jukebox */,
 				D5CB75AC1C29A3B800412277 /* JukeboxTests */,
+				D52D724D1C3BF710009A4426 /* JukeboxSoundsHyper */,
 				D5CB759F1C29A3B800412277 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +123,7 @@
 			children = (
 				D5CB759E1C29A3B800412277 /* Jukebox.framework */,
 				D5CB75A81C29A3B800412277 /* Jukebox-iOS-Tests.xctest */,
+				D52D724C1C3BF710009A4426 /* JukeboxSoundsHyper.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,6 +206,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D52D724B1C3BF710009A4426 /* JukeboxSoundsHyper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D52D72511C3BF710009A4426 /* Build configuration list for PBXNativeTarget "JukeboxSoundsHyper" */;
+			buildPhases = (
+				D52D72481C3BF710009A4426 /* Sources */,
+				D52D72491C3BF710009A4426 /* Frameworks */,
+				D52D724A1C3BF710009A4426 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JukeboxSoundsHyper;
+			productName = JukeboxSoundsHyper;
+			productReference = D52D724C1C3BF710009A4426 /* JukeboxSoundsHyper.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		D5CB759D1C29A3B800412277 /* Jukebox-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5CB75B21C29A3B800412277 /* Build configuration list for PBXNativeTarget "Jukebox-iOS" */;
@@ -234,6 +270,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Hyper Interaktiv AS";
 				TargetAttributes = {
+					D52D724B1C3BF710009A4426 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					D5CB759D1C29A3B800412277 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -256,11 +295,19 @@
 			targets = (
 				D5CB759D1C29A3B800412277 /* Jukebox-iOS */,
 				D5CB75A71C29A3B800412277 /* Jukebox-iOS-Tests */,
+				D52D724B1C3BF710009A4426 /* JukeboxSoundsHyper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D52D724A1C3BF710009A4426 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5CB759C1C29A3B800412277 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,6 +344,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D52D72481C3BF710009A4426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5CB75991C29A3B800412277 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,6 +386,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D52D724F1C3BF710009A4426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = JukeboxSoundsHyper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxSoundsHyper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D52D72501C3BF710009A4426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = JukeboxSoundsHyper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxSoundsHyper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		D5CB75B01C29A3B800412277 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -487,6 +573,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D52D72511C3BF710009A4426 /* Build configuration list for PBXNativeTarget "JukeboxSoundsHyper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D52D724F1C3BF710009A4426 /* Debug */,
+				D52D72501C3BF710009A4426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D5CB75981C29A3B800412277 /* Build configuration list for PBXProject "Jukebox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
