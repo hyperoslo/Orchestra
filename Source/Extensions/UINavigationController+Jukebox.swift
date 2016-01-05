@@ -14,7 +14,8 @@ extension UINavigationController {
     dispatch_once(&Static.token) {
       MethodSwizzler.swizzleMethod("pushViewController:animated:", cls: self)
       MethodSwizzler.swizzleMethod("popViewControllerAnimated:", cls: self)
-      MethodSwizzler.swizzleMethod("popToViewController:animated", cls: self)
+      MethodSwizzler.swizzleMethod("popToViewController:animated:", cls: self)
+      MethodSwizzler.swizzleMethod("popToRootViewControllerAnimated:", cls: self)
     }
   }
 
@@ -52,5 +53,17 @@ extension UINavigationController {
     }
 
     return jukebox_popToViewController(viewController, animated: animated)
+  }
+
+  func jukebox_popToRootViewControllerAnimated(animated: Bool) -> [UIViewController]? {
+    if animated && Jukebox.autoPlay {
+      do {
+        try Jukebox.player.play(.Back)
+      } catch {
+        print(error)
+      }
+    }
+
+    return jukebox_popToRootViewControllerAnimated(animated)
   }
 }
