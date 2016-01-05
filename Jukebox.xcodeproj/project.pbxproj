@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D52D72601C3BFCE1009A4426 /* soundForward.aif in Resources */ = {isa = PBXBuildFile; fileRef = D52D72561C3BFCD9009A4426 /* soundForward.aif */; };
+		D52D72611C3BFCE1009A4426 /* soundBack.aif in Resources */ = {isa = PBXBuildFile; fileRef = D52D72571C3BFCD9009A4426 /* soundBack.aif */; };
+		D52D72621C3BFCE1009A4426 /* soundWarning.aif in Resources */ = {isa = PBXBuildFile; fileRef = D52D72581C3BFCD9009A4426 /* soundWarning.aif */; };
+		D52D72631C3BFCE1009A4426 /* soundError.aif in Resources */ = {isa = PBXBuildFile; fileRef = D52D72591C3BFCD9009A4426 /* soundError.aif */; };
+		D52D72641C3BFCE1009A4426 /* soundSelect.aif in Resources */ = {isa = PBXBuildFile; fileRef = D52D725A1C3BFCD9009A4426 /* soundSelect.aif */; };
 		D5797B181C3ACB2D00CCB487 /* UIControl+Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */; };
 		D5797B1B1C3ACC3900CCB487 /* MethodSwizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B1A1C3ACC3900CCB487 /* MethodSwizzler.swift */; };
 		D5CB75A91C29A3B800412277 /* Jukebox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CB759E1C29A3B800412277 /* Jukebox.framework */; };
@@ -34,7 +39,11 @@
 
 /* Begin PBXFileReference section */
 		D52D724C1C3BF710009A4426 /* JukeboxSoundsHyper.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JukeboxSoundsHyper.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		D52D72541C3BF846009A4426 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D52D72561C3BFCD9009A4426 /* soundForward.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = soundForward.aif; path = ../../../../../../../Desktop/HyperSounds/soundForward.aif; sourceTree = "<group>"; };
+		D52D72571C3BFCD9009A4426 /* soundBack.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = soundBack.aif; path = ../../../../../../../Desktop/HyperSounds/soundBack.aif; sourceTree = "<group>"; };
+		D52D72581C3BFCD9009A4426 /* soundWarning.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = soundWarning.aif; path = ../../../../../../../Desktop/HyperSounds/soundWarning.aif; sourceTree = "<group>"; };
+		D52D72591C3BFCD9009A4426 /* soundError.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = soundError.aif; path = ../../../../../../../Desktop/HyperSounds/soundError.aif; sourceTree = "<group>"; };
+		D52D725A1C3BFCD9009A4426 /* soundSelect.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = soundSelect.aif; path = ../../../../../../../Desktop/HyperSounds/soundSelect.aif; sourceTree = "<group>"; };
 		D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Jukebox.swift"; sourceTree = "<group>"; };
 		D5797B1A1C3ACC3900CCB487 /* MethodSwizzler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodSwizzler.swift; sourceTree = "<group>"; };
 		D5CB759E1C29A3B800412277 /* Jukebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jukebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,7 +101,11 @@
 		D52D72531C3BF846009A4426 /* Hyper */ = {
 			isa = PBXGroup;
 			children = (
-				D52D72541C3BF846009A4426 /* Info.plist */,
+				D52D72561C3BFCD9009A4426 /* soundForward.aif */,
+				D52D72571C3BFCD9009A4426 /* soundBack.aif */,
+				D52D72581C3BFCD9009A4426 /* soundWarning.aif */,
+				D52D72591C3BFCD9009A4426 /* soundError.aif */,
+				D52D725A1C3BFCD9009A4426 /* soundSelect.aif */,
 			);
 			path = Hyper;
 			sourceTree = "<group>";
@@ -313,6 +326,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D52D72601C3BFCE1009A4426 /* soundForward.aif in Resources */,
+				D52D72611C3BFCE1009A4426 /* soundBack.aif in Resources */,
+				D52D72621C3BFCE1009A4426 /* soundWarning.aif in Resources */,
+				D52D72641C3BFCE1009A4426 /* soundSelect.aif in Resources */,
+				D52D72631C3BFCE1009A4426 /* soundError.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +417,8 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/JukeboxSounds/Hyper/Info.plist";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxSoundsHyper;
@@ -415,7 +434,8 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/JukeboxSounds/Hyper/Info.plist";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxSoundsHyper;
