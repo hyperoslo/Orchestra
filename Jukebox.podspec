@@ -3,13 +3,25 @@ Pod::Spec.new do |s|
   s.summary          = "A short description of Jukebox."
   s.version          = "0.1.0"
   s.homepage         = "https://github.com/hyperoslo/Jukebox"
-  s.license          = 'MIT'
+  s.license          = {
+    :type => 'MIT',
+    :file => 'LICENSE.md'
+  }
   s.author           = { "Hyper Interaktiv AS" => "ios@hyper.no" }
-  s.source           = { :git => "https://github.com/hyperoslo/Jukebox.git", :tag => s.version.to_s }
+  s.source           = {
+    :git => "https://github.com/hyperoslo/Jukebox.git",
+    :tag => s.version.to_s
+  }
   s.social_media_url = 'https://twitter.com/hyperoslo'
-  s.platform     = :ios, '8.0'
+
+  s.ios.deployment_target = '8.0'
   s.requires_arc = true
+
   s.source_files = 'Source/**/*'
-# s.frameworks = 'UIKit', 'MapKit'
-# s.dependency 'AFNetworking', '~> 2.3'
+
+  s.resource_bundles = {
+    'JukeboxSoundsHyper' => ['Sounds/Hyper/*.{aif}']
+  }
+
+  s.frameworks = 'UIKit', 'AVFoundation'
 end

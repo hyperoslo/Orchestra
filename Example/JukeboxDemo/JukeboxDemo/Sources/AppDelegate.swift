@@ -1,5 +1,6 @@
 import UIKit
 import Hue
+import Jukebox
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.makeKeyAndVisible()
 
     UINavigationBar.appearance().tintColor = UIColor.hex("F57D2D")
+
+    Jukebox.autoPlay = true
 
     return true
   }

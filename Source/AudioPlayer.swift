@@ -3,8 +3,9 @@ import AVFoundation
 public class AudioPlayer {
 
   public enum Error: ErrorType {
-    case SoundNotFound
     case ThemeBundleNotFound
+    case FrameworkBundleNotFound
+    case SoundNotFound
   }
 
   public let theme: Theme
@@ -26,18 +27,23 @@ public class AudioPlayer {
     try session.setCategory(AVAudioSessionCategoryPlayback)
     try session.setActive(true)
 
-    let mainBundle = NSBundle.mainBundle()
+    let bundle = NSBundle(forClass: AudioPlayer.self)
 
-    guard let bundleURL = mainBundle.URLForResource(theme.bundleName, withExtension: "bundle"),
-      bundle = NSBundle(URL: bundleURL) else {
-        throw Error.ThemeBundleNotFound
+    guard let resourcePath = bundle.resourcePath else {
+      throw Error.FrameworkBundleNotFound
     }
 
-    guard let path = bundle.pathForResource(sound.rawValue, ofType: theme.audioFormat) else {
+    let soundsBundlePath = resourcePath + "/\(theme.bundleName).bundle"
+
+    guard let soundsBundle = NSBundle(path: soundsBundlePath) else {
+      throw Error.ThemeBundleNotFound
+    }
+
+    guard let soundPath = soundsBundle.pathForResource(sound.rawValue, ofType: theme.audioFormat) else {
       throw Error.SoundNotFound
     }
 
-    let URL = NSURL(fileURLWithPath: path)
+    let URL = NSURL(fileURLWithPath: soundPath)
 
     if player?.playing == true {
       stop()
