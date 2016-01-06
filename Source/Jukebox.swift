@@ -17,4 +17,16 @@ public class Jukebox {
     autoPlay = false
     theme = defaultTheme
   }
+
+  // MARK: - Player
+
+  public static func play(sound: Sound) throws -> Bool {
+    return try player.play(sound)
+  }
+
+  static func autoPlay(sound: Sound) {
+    guard autoPlay else { return }
+
+    player.playSafely(sound)
+  }
 }

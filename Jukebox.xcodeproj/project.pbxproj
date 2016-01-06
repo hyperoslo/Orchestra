@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D51E7AE31C3C16EC008520D6 /* soundBack.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7AD91C3C16DF008520D6 /* soundBack.aif */; };
-		D51E7AE41C3C16EC008520D6 /* soundError.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7ADA1C3C16DF008520D6 /* soundError.aif */; };
-		D51E7AE51C3C16EC008520D6 /* soundForward.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7ADB1C3C16DF008520D6 /* soundForward.aif */; };
-		D51E7AE61C3C16EC008520D6 /* soundSelect.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7ADC1C3C16DF008520D6 /* soundSelect.aif */; };
-		D51E7AE71C3C16EC008520D6 /* soundWarning.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7ADD1C3C16DF008520D6 /* soundWarning.aif */; };
 		D51E7AEB1C3C1B2E008520D6 /* JukeboxSoundsHyper.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D52D724C1C3BF710009A4426 /* JukeboxSoundsHyper.bundle */; };
+		D51E7AED1C3C6936008520D6 /* UIViewController+Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E7AEC1C3C6936008520D6 /* UIViewController+Jukebox.swift */; };
+		D576E0F61C3C81600088AF89 /* soundDismiss.aif in Resources */ = {isa = PBXBuildFile; fileRef = D576E0E71C3C81540088AF89 /* soundDismiss.aif */; };
+		D576E0F71C3C81600088AF89 /* soundPop.aif in Resources */ = {isa = PBXBuildFile; fileRef = D576E0E81C3C81540088AF89 /* soundPop.aif */; };
+		D576E0F81C3C81600088AF89 /* soundPresent.aif in Resources */ = {isa = PBXBuildFile; fileRef = D576E0E91C3C81540088AF89 /* soundPresent.aif */; };
+		D576E0F91C3C81600088AF89 /* soundPush.aif in Resources */ = {isa = PBXBuildFile; fileRef = D576E0EA1C3C81540088AF89 /* soundPush.aif */; };
+		D576E0FA1C3C81600088AF89 /* soundError.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7ADA1C3C16DF008520D6 /* soundError.aif */; };
+		D576E0FB1C3C81600088AF89 /* soundSelect.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7ADC1C3C16DF008520D6 /* soundSelect.aif */; };
+		D576E0FC1C3C81600088AF89 /* soundWarning.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7ADD1C3C16DF008520D6 /* soundWarning.aif */; };
 		D5797B181C3ACB2D00CCB487 /* UIControl+Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */; };
 		D5797B1B1C3ACC3900CCB487 /* MethodSwizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B1A1C3ACC3900CCB487 /* MethodSwizzler.swift */; };
 		D5CB75A91C29A3B800412277 /* Jukebox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CB759E1C29A3B800412277 /* Jukebox.framework */; };
@@ -39,12 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D51E7AD91C3C16DF008520D6 /* soundBack.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundBack.aif; sourceTree = "<group>"; };
 		D51E7ADA1C3C16DF008520D6 /* soundError.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundError.aif; sourceTree = "<group>"; };
-		D51E7ADB1C3C16DF008520D6 /* soundForward.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundForward.aif; sourceTree = "<group>"; };
 		D51E7ADC1C3C16DF008520D6 /* soundSelect.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundSelect.aif; sourceTree = "<group>"; };
 		D51E7ADD1C3C16DF008520D6 /* soundWarning.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundWarning.aif; sourceTree = "<group>"; };
+		D51E7AEC1C3C6936008520D6 /* UIViewController+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Jukebox.swift"; sourceTree = "<group>"; };
 		D52D724C1C3BF710009A4426 /* JukeboxSoundsHyper.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JukeboxSoundsHyper.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D576E0E71C3C81540088AF89 /* soundDismiss.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundDismiss.aif; sourceTree = "<group>"; };
+		D576E0E81C3C81540088AF89 /* soundPop.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundPop.aif; sourceTree = "<group>"; };
+		D576E0E91C3C81540088AF89 /* soundPresent.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundPresent.aif; sourceTree = "<group>"; };
+		D576E0EA1C3C81540088AF89 /* soundPush.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundPush.aif; sourceTree = "<group>"; };
 		D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Jukebox.swift"; sourceTree = "<group>"; };
 		D5797B1A1C3ACC3900CCB487 /* MethodSwizzler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodSwizzler.swift; sourceTree = "<group>"; };
 		D5CB759E1C29A3B800412277 /* Jukebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jukebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,9 +108,11 @@
 		D51E7AD81C3C16DF008520D6 /* Hyper */ = {
 			isa = PBXGroup;
 			children = (
-				D51E7AD91C3C16DF008520D6 /* soundBack.aif */,
+				D576E0E71C3C81540088AF89 /* soundDismiss.aif */,
+				D576E0E81C3C81540088AF89 /* soundPop.aif */,
+				D576E0E91C3C81540088AF89 /* soundPresent.aif */,
+				D576E0EA1C3C81540088AF89 /* soundPush.aif */,
 				D51E7ADA1C3C16DF008520D6 /* soundError.aif */,
-				D51E7ADB1C3C16DF008520D6 /* soundForward.aif */,
 				D51E7ADC1C3C16DF008520D6 /* soundSelect.aif */,
 				D51E7ADD1C3C16DF008520D6 /* soundWarning.aif */,
 			);
@@ -115,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */,
+				D51E7AEC1C3C6936008520D6 /* UIViewController+Jukebox.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -327,11 +336,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D51E7AE71C3C16EC008520D6 /* soundWarning.aif in Resources */,
-				D51E7AE31C3C16EC008520D6 /* soundBack.aif in Resources */,
-				D51E7AE41C3C16EC008520D6 /* soundError.aif in Resources */,
-				D51E7AE61C3C16EC008520D6 /* soundSelect.aif in Resources */,
-				D51E7AE51C3C16EC008520D6 /* soundForward.aif in Resources */,
+				D576E0F91C3C81600088AF89 /* soundPush.aif in Resources */,
+				D576E0FC1C3C81600088AF89 /* soundWarning.aif in Resources */,
+				D576E0F71C3C81600088AF89 /* soundPop.aif in Resources */,
+				D576E0FB1C3C81600088AF89 /* soundSelect.aif in Resources */,
+				D576E0F81C3C81600088AF89 /* soundPresent.aif in Resources */,
+				D576E0FA1C3C81600088AF89 /* soundError.aif in Resources */,
+				D576E0F61C3C81600088AF89 /* soundDismiss.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +398,7 @@
 				D5DF49721C2B031E00343F13 /* Theme.swift in Sources */,
 				D5797B1B1C3ACC3900CCB487 /* MethodSwizzler.swift in Sources */,
 				D5DF49821C2B0D2100343F13 /* ThemeList.swift in Sources */,
+				D51E7AED1C3C6936008520D6 /* UIViewController+Jukebox.swift in Sources */,
 				D5797B181C3ACB2D00CCB487 /* UIControl+Jukebox.swift in Sources */,
 				D5DF495E1C2ABD2900343F13 /* AudioPlayer.swift in Sources */,
 				D5DF49711C2B031E00343F13 /* Sound.swift in Sources */,
