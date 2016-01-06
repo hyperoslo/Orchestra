@@ -38,7 +38,7 @@ extension UIViewController {
   func jukebox_viewWillDisappear(animated: Bool) {
     jukebox_viewWillDisappear(animated)
 
-    guard animated && Jukebox.autoPlay else { return }
+    guard animated else { return }
 
     var sound: Sound?
 
