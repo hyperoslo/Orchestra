@@ -1,7 +1,7 @@
 import UIKit
 import Cartography
 
-class MainController: UIViewController {
+class WelcomeController: UIViewController {
 
   lazy var imageView: UIImageView = {
     let image = UIImage(named: "hyperLogo")
@@ -15,7 +15,7 @@ class MainController: UIViewController {
     button.backgroundColor = UIColor.hex("F57D2D")
     button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
     button.titleLabel?.font = UIFont.systemFontOfSize(18)
-    button.setTitle(NSLocalizedString("Open Source", comment: "").uppercaseString,
+    button.setTitle(NSLocalizedString("Enter", comment: "").uppercaseString,
       forState: .Normal)
 
     button.addTarget(self, action: "buttonDidPress", forControlEvents: .TouchUpInside)
@@ -28,7 +28,7 @@ class MainController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    title = "Hyper"
+    title = "Hyper iOS"
     view.backgroundColor = UIColor.whiteColor()
 
     [imageView, button].forEach { view.addSubview($0) }
@@ -58,7 +58,7 @@ class MainController: UIViewController {
   // MARK: - Actions
 
   func buttonDidPress() {
-    let controller = ProjectListController()
+    let controller = MainController()
     navigationController?.pushViewController(controller, animated: true)
   }
 }
