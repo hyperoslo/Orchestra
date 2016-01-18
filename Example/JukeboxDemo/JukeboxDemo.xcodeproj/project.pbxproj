@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		64791DFFBD3321074994E9B2 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25992C78F7333A1DDD2CC91 /* Pods.framework */; };
-		D5797B1D1C3AE29F00CCB487 /* ProjectListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B1C1C3AE29F00CCB487 /* ProjectListController.swift */; };
 		D5797B231C3AEBC900CCB487 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B221C3AEBC900CCB487 /* Project.swift */; };
-		D5797B251C3AF54F00CCB487 /* ProjectDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B241C3AF54F00CCB487 /* ProjectDetailController.swift */; };
-		D590F7961C4D9D2700C6EE92 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7951C4D9D2700C6EE92 /* TabBarController.swift */; };
-		D590F7981C4D9E0200C6EE92 /* TeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7971C4D9E0200C6EE92 /* TeamController.swift */; };
+		D590F7A31C4DA3E400C6EE92 /* ProjectDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F79E1C4DA3E400C6EE92 /* ProjectDetailController.swift */; };
+		D590F7A41C4DA3E400C6EE92 /* ProjectListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F79F1C4DA3E400C6EE92 /* ProjectListController.swift */; };
+		D590F7A51C4DA3E400C6EE92 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7A01C4DA3E400C6EE92 /* TabBarController.swift */; };
+		D590F7A61C4DA3E400C6EE92 /* TeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7A11C4DA3E400C6EE92 /* TeamController.swift */; };
+		D590F7A71C4DA3E400C6EE92 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7A21C4DA3E400C6EE92 /* WelcomeController.swift */; };
 		D5C6A0941C3ABA5D00CF6130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C6A0921C3ABA5D00CF6130 /* LaunchScreen.storyboard */; };
 		D5C6A0A11C3ABBB600CF6130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C6A09D1C3ABBB600CF6130 /* AppDelegate.swift */; };
-		D5C6A0A21C3ABBB600CF6130 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C6A09E1C3ABBB600CF6130 /* WelcomeController.swift */; };
 		D5C6A0A31C3ABBB600CF6130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C6A0A01C3ABBB600CF6130 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -23,16 +23,16 @@
 		0111A7FDCFDB0845038A6E5D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A25992C78F7333A1DDD2CC91 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85001CC20159C1DBF99D0CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		D5797B1C1C3AE29F00CCB487 /* ProjectListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListController.swift; sourceTree = "<group>"; };
 		D5797B221C3AEBC900CCB487 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
-		D5797B241C3AF54F00CCB487 /* ProjectDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailController.swift; sourceTree = "<group>"; };
-		D590F7951C4D9D2700C6EE92 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		D590F7971C4D9E0200C6EE92 /* TeamController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamController.swift; sourceTree = "<group>"; };
+		D590F79E1C4DA3E400C6EE92 /* ProjectDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailController.swift; sourceTree = "<group>"; };
+		D590F79F1C4DA3E400C6EE92 /* ProjectListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListController.swift; sourceTree = "<group>"; };
+		D590F7A01C4DA3E400C6EE92 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D590F7A11C4DA3E400C6EE92 /* TeamController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamController.swift; sourceTree = "<group>"; };
+		D590F7A21C4DA3E400C6EE92 /* WelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
 		D5C6A0861C3ABA5D00CF6130 /* JukeboxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JukeboxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C6A0931C3ABA5D00CF6130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5C6A0951C3ABA5D00CF6130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5C6A09D1C3ABBB600CF6130 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5C6A09E1C3ABBB600CF6130 /* WelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
 		D5C6A0A01C3ABBB600CF6130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +71,18 @@
 				D5797B221C3AEBC900CCB487 /* Project.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D590F79D1C4DA3E400C6EE92 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D590F79E1C4DA3E400C6EE92 /* ProjectDetailController.swift */,
+				D590F79F1C4DA3E400C6EE92 /* ProjectListController.swift */,
+				D590F7A01C4DA3E400C6EE92 /* TabBarController.swift */,
+				D590F7A11C4DA3E400C6EE92 /* TeamController.swift */,
+				D590F7A21C4DA3E400C6EE92 /* WelcomeController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		D5C6A07D1C3ABA5D00CF6130 = {
@@ -113,13 +125,9 @@
 		D5C6A09C1C3ABBB600CF6130 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D590F79D1C4DA3E400C6EE92 /* Controllers */,
 				D5797B211C3AEBC900CCB487 /* Models */,
 				D5C6A09D1C3ABBB600CF6130 /* AppDelegate.swift */,
-				D5C6A09E1C3ABBB600CF6130 /* WelcomeController.swift */,
-				D5797B1C1C3AE29F00CCB487 /* ProjectListController.swift */,
-				D5797B241C3AF54F00CCB487 /* ProjectDetailController.swift */,
-				D590F7951C4D9D2700C6EE92 /* TabBarController.swift */,
-				D590F7971C4D9E0200C6EE92 /* TeamController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -253,12 +261,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5797B1D1C3AE29F00CCB487 /* ProjectListController.swift in Sources */,
-				D5797B251C3AF54F00CCB487 /* ProjectDetailController.swift in Sources */,
-				D5C6A0A21C3ABBB600CF6130 /* WelcomeController.swift in Sources */,
-				D590F7961C4D9D2700C6EE92 /* TabBarController.swift in Sources */,
-				D590F7981C4D9E0200C6EE92 /* TeamController.swift in Sources */,
+				D590F7A31C4DA3E400C6EE92 /* ProjectDetailController.swift in Sources */,
+				D590F7A71C4DA3E400C6EE92 /* WelcomeController.swift in Sources */,
+				D590F7A41C4DA3E400C6EE92 /* ProjectListController.swift in Sources */,
 				D5C6A0A11C3ABBB600CF6130 /* AppDelegate.swift in Sources */,
+				D590F7A51C4DA3E400C6EE92 /* TabBarController.swift in Sources */,
+				D590F7A61C4DA3E400C6EE92 /* TeamController.swift in Sources */,
 				D5797B231C3AEBC900CCB487 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
