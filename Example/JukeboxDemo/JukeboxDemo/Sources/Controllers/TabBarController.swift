@@ -1,9 +1,24 @@
 import UIKit
+import Hue
 
 class MainController: UITabBarController {
 
-  lazy var projectListController: UIViewController = ProjectListController()
-  lazy var teamController: UIViewController = TeamController()
+  lazy var projectListController: UINavigationController = {
+    let controller = ProjectListController()
+    let navigationController = UINavigationController(rootViewController: controller)
+    controller.tabBarItem.title = "Open Source"
+    controller.tabBarItem.image = UIImage(named: "tabProjects")
+
+    return navigationController
+  }()
+
+  lazy var teamController: TeamController = {
+    let controller = TeamController()
+    controller.tabBarItem.title = "Team"
+    controller.tabBarItem.image = UIImage(named: "tabTeam")
+
+    return controller
+  }()
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -12,6 +27,7 @@ class MainController: UITabBarController {
 
   func setupTabBar() {
     tabBar.translucent = true
+    tabBar.tintColor = UIColor.hex("F57D2D")
 
     viewControllers = [
       projectListController,
