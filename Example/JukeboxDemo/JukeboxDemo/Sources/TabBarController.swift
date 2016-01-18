@@ -1,9 +1,23 @@
-//
-//  TabBarController.swift
-//  JukeboxDemo
-//
-//  Created by Vadym Markov on 18/01/16.
-//  Copyright © 2016 Hyper Interaktiv AS. All rights reserved.
-//
+import UIKit
 
-import Foundation
+class MainController: UITabBarController {
+
+  lazy var projectListController: UIViewController = ProjectListController()
+  lazy var teamController: UIViewController = TeamController()
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    setupTabBar()
+  }
+
+  func setupTabBar() {
+    tabBar.translucent = true
+
+    viewControllers = [
+      projectListController,
+      teamController
+    ]
+
+    selectedIndex = 0
+  }
+}
