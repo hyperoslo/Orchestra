@@ -15,6 +15,7 @@
 		D590F7A61C4DA3E400C6EE92 /* TeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7A11C4DA3E400C6EE92 /* TeamController.swift */; };
 		D590F7A71C4DA3E400C6EE92 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7A21C4DA3E400C6EE92 /* WelcomeController.swift */; };
 		D590F7A91C4DADE100C6EE92 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7A81C4DADE100C6EE92 /* Developer.swift */; };
+		D590F7AC1C4DB02300C6EE92 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7AB1C4DB02300C6EE92 /* DataSource.swift */; };
 		D5C6A0941C3ABA5D00CF6130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C6A0921C3ABA5D00CF6130 /* LaunchScreen.storyboard */; };
 		D5C6A0A11C3ABBB600CF6130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C6A09D1C3ABBB600CF6130 /* AppDelegate.swift */; };
 		D5C6A0A31C3ABBB600CF6130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C6A0A01C3ABBB600CF6130 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		D590F7A11C4DA3E400C6EE92 /* TeamController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamController.swift; sourceTree = "<group>"; };
 		D590F7A21C4DA3E400C6EE92 /* WelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
 		D590F7A81C4DADE100C6EE92 /* Developer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
+		D590F7AB1C4DB02300C6EE92 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		D5C6A0861C3ABA5D00CF6130 /* JukeboxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JukeboxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C6A0931C3ABA5D00CF6130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5C6A0951C3ABA5D00CF6130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		D590F7AA1C4DB01B00C6EE92 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D590F7AB1C4DB02300C6EE92 /* DataSource.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		D5C6A07D1C3ABA5D00CF6130 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +138,7 @@
 		D5C6A09C1C3ABBB600CF6130 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D590F7AA1C4DB01B00C6EE92 /* Library */,
 				D590F79D1C4DA3E400C6EE92 /* Controllers */,
 				D5797B211C3AEBC900CCB487 /* Models */,
 				D5C6A09D1C3ABBB600CF6130 /* AppDelegate.swift */,
@@ -267,6 +278,7 @@
 				D590F7A91C4DADE100C6EE92 /* Developer.swift in Sources */,
 				D590F7A31C4DA3E400C6EE92 /* ProjectDetailController.swift in Sources */,
 				D590F7A71C4DA3E400C6EE92 /* WelcomeController.swift in Sources */,
+				D590F7AC1C4DB02300C6EE92 /* DataSource.swift in Sources */,
 				D590F7A41C4DA3E400C6EE92 /* ProjectListController.swift in Sources */,
 				D5C6A0A11C3ABBB600CF6130 /* AppDelegate.swift in Sources */,
 				D590F7A51C4DA3E400C6EE92 /* TabBarController.swift in Sources */,
