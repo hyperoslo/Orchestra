@@ -3,7 +3,8 @@ public enum Sound: String {
   case Pop = "soundPop"
   case Present = "soundPresent"
   case Dismiss = "soundDismiss"
-  case Select = "soundSelect"
+  case Button = "soundButton"
+  case TabBar = "soundTabBar"
   case Error = "soundError"
   case Warning = "soundWarning"
 }

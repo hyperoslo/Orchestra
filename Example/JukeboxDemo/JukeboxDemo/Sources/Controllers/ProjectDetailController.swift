@@ -71,12 +71,12 @@ class ProjectDetailController: UIViewController {
     imageView.setImage(project.imageURL)
     infoLabel.text = project.info
 
-    setupConstrains()
+    configureConstrains()
   }
 
-  // MARK: - Constrains
+  // MARK: - Configuration
 
-  func setupConstrains() {
+  func configureConstrains() {
     infoLabel.sizeToFit()
 
     constrain(scrollView) { scrollView in

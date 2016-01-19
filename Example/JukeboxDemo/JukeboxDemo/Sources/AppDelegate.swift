@@ -12,8 +12,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     return controller
     }()
 
-  lazy var viewController: MainController = {
-    let controller = MainController()
+  lazy var viewController: WelcomeController = {
+    let controller = WelcomeController()
     return controller
     }()
 
