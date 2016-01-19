@@ -6,60 +6,47 @@ class ProjectListController: UITableViewController {
 
   var projects = [Project]()
 
+  lazy var dataSource: DataSource<Project, UITableViewCell> = { [unowned self] in
+    let dataSource = DataSource(
+      cellIdentifier: ProjectListController.reusableIdentifier,
+      configureCell: self.configureCell)
+
+    dataSource.action = self.selectCell
+    dataSource.height = 70
+
+    return dataSource
+    }()
+
   // MARK: - View Lifecycle
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
     projects = Project.projects.sort { $0.name < $1.name }
-    setupTableView()
+    dataSource.items = projects
+    configureTableView()
   }
 
-  // MARK: - Setup
+  // MARK: - Configuration
 
-  func setupTableView() {
+  func configureTableView() {
     tableView.registerClass(UITableViewCell.self,
       forCellReuseIdentifier: ProjectListController.reusableIdentifier)
     tableView.backgroundColor = .whiteColor()
     tableView.tableFooterView = UIView(frame: CGRect.zero)
-  }
-}
-
-// MARK: - UITableViewDataSource
-
-extension ProjectListController {
-
-  override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return projects.count
+    tableView.dataSource = dataSource
+    tableView.delegate = dataSource
   }
 
-  override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    guard let cell = tableView.dequeueReusableCellWithIdentifier(ProjectListController.reusableIdentifier)
-      else { return UITableViewCell() }
-
-    let item = projects[indexPath.row]
-
-    cell.textLabel?.text = item.name
-    cell.detailTextLabel?.text = item.githubURL.absoluteString
-
-    return cell
-  }
-}
-
-// MARK: - UITableViewDelegate
-
-extension ProjectListController {
-
-  override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-    return 70
+  func configureCell(project: Project, cell: UITableViewCell) {
+    cell.textLabel?.text = project.name
+    cell.detailTextLabel?.text = project.githubURL.absoluteString
   }
 
-  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    tableView.deselectRowAtIndexPath(indexPath, animated: true)
+  // MARK: - Actions
 
-    let project = projects[indexPath.row]
+  func selectCell(project: Project) {
     let controller = ProjectDetailController(project: project)
-
     navigationController?.pushViewController(controller, animated: true)
   }
 }

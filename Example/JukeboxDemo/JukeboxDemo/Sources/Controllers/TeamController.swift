@@ -7,21 +7,12 @@ class TeamController: UITableViewController {
 
   var developers = [Developer]()
 
-  let cellConfigure = { (developer: Developer, cell: UITableViewCell) -> Void in
-    cell.textLabel?.text = developer.name
-    cell.imageView?.setImage(developer.imageURL)
-  }
-
-  let action = { (developer: Developer) -> Void in
-    UIApplication.sharedApplication().openURL(developer.githubURL)
-  }
-
   lazy var dataSource: DataSource<Developer, UITableViewCell> = { [unowned self] in
     let dataSource = DataSource(
       cellIdentifier: TeamController.reusableIdentifier,
-      cellConfigure: self.cellConfigure)
+      configureCell: self.configureCell)
 
-    dataSource.action = self.action
+    dataSource.action = self.selectCell
 
     return dataSource
   }()
@@ -33,17 +24,28 @@ class TeamController: UITableViewController {
 
     developers = Developer.developers.sort { $0.name < $1.name }
     dataSource.items = developers
-    setupTableView()
+    configureTableView()
   }
 
-  // MARK: - Setup
+  // MARK: - Configuration
 
-  func setupTableView() {
+  func configureTableView() {
     tableView.registerClass(UITableViewCell.self,
-      forCellReuseIdentifier: ProjectListController.reusableIdentifier)
+      forCellReuseIdentifier: TeamController.reusableIdentifier)
     tableView.backgroundColor = .whiteColor()
     tableView.tableFooterView = UIView(frame: CGRect.zero)
     tableView.dataSource = dataSource
     tableView.delegate = dataSource
+  }
+
+  func configureCell(developer: Developer, cell: UITableViewCell) {
+    cell.textLabel?.text = developer.name
+    cell.imageView?.setImage(developer.imageURL)
+  }
+
+  // MARK: - Actions
+
+  func selectCell(developer: Developer) {
+    UIApplication.sharedApplication().openURL(developer.githubURL)
   }
 }

@@ -3,14 +3,14 @@ import UIKit
 class DataSource<Model, Cell> : NSObject, UITableViewDataSource, UITableViewDelegate {
 
   let cellIdentifier: String
-  let cellConfigure: (Model, Cell) -> Void
+  let configureCell: (Model, Cell) -> Void
   var height: CGFloat = 64
   var items = [Model]()
   var action: (Model -> Void)?
 
-  init(cellIdentifier: String, cellConfigure: (Model, Cell) -> Void) {
+  init(cellIdentifier: String, configureCell: (Model, Cell) -> Void) {
     self.cellIdentifier = cellIdentifier
-    self.cellConfigure = cellConfigure
+    self.configureCell = configureCell
   }
 
   // MARK: - UITableViewDataSource
@@ -31,7 +31,7 @@ class DataSource<Model, Cell> : NSObject, UITableViewDataSource, UITableViewDele
     let item = items[indexPath.item]
 
     if let cell = cell as? Cell {
-      cellConfigure(item, cell)
+      configureCell(item, cell)
     }
 
     return cell
