@@ -6,13 +6,12 @@ class ProjectListController: UITableViewController {
 
   var projects = [Project]()
 
-  lazy var dataSource: DataSource<Project, UITableViewCell> = { [unowned self] in
+  lazy var dataSource: DataSource<Project, TableViewCell> = { [unowned self] in
     let dataSource = DataSource(
       cellIdentifier: ProjectListController.reusableIdentifier,
       configureCell: self.configureCell)
 
     dataSource.action = self.selectCell
-    dataSource.height = 70
 
     return dataSource
     }()
@@ -30,7 +29,7 @@ class ProjectListController: UITableViewController {
   // MARK: - Configuration
 
   func configureTableView() {
-    tableView.registerClass(UITableViewCell.self,
+    tableView.registerClass(TableViewCell.self,
       forCellReuseIdentifier: ProjectListController.reusableIdentifier)
     tableView.backgroundColor = .whiteColor()
     tableView.tableFooterView = UIView(frame: CGRect.zero)
@@ -38,7 +37,7 @@ class ProjectListController: UITableViewController {
     tableView.delegate = dataSource
   }
 
-  func configureCell(project: Project, cell: UITableViewCell) {
+  func configureCell(project: Project, cell: TableViewCell) {
     cell.textLabel?.text = project.name
     cell.detailTextLabel?.text = project.githubURL.absoluteString
   }

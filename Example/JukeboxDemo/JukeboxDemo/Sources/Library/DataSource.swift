@@ -4,7 +4,7 @@ class DataSource<Model, Cell> : NSObject, UITableViewDataSource, UITableViewDele
 
   let cellIdentifier: String
   let configureCell: (Model, Cell) -> Void
-  var height: CGFloat = 64
+  var cellHeight: CGFloat = 64
   var items = [Model]()
   var action: (Model -> Void)?
 
@@ -40,7 +40,7 @@ class DataSource<Model, Cell> : NSObject, UITableViewDataSource, UITableViewDele
   // MARK: - UITableViewDelegate
 
   func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-    return 64
+    return cellHeight
   }
 
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

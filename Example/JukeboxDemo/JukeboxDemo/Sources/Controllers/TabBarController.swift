@@ -20,12 +20,16 @@ class MainController: UITabBarController {
     return controller
   }()
 
+  // MARK: - View Lifecycle
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    setupTabBar()
+    configureTabBar()
   }
 
-  func setupTabBar() {
+  // MARK: - Configuration
+
+  func configureTabBar() {
     tabBar.translucent = true
     tabBar.tintColor = UIColor.hex("F57D2D")
 

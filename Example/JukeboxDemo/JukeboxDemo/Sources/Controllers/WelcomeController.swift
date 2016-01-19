@@ -32,12 +32,12 @@ class WelcomeController: UIViewController {
     view.backgroundColor = UIColor.whiteColor()
 
     [imageView, button].forEach { view.addSubview($0) }
-    setupConstrains()
+    configureConstrains()
   }
 
-  // MARK: - Constrains
+  // MARK: - Configuration
 
-  func setupConstrains() {
+  func configureConstrains() {
     let imageSize = imageView.frame.size
 
     constrain(imageView, button) { imageView, button in

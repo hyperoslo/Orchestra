@@ -7,7 +7,7 @@ class TeamController: UITableViewController {
 
   var developers = [Developer]()
 
-  lazy var dataSource: DataSource<Developer, UITableViewCell> = { [unowned self] in
+  lazy var dataSource: DataSource<Developer, TableViewCell> = { [unowned self] in
     let dataSource = DataSource(
       cellIdentifier: TeamController.reusableIdentifier,
       configureCell: self.configureCell)
@@ -30,7 +30,7 @@ class TeamController: UITableViewController {
   // MARK: - Configuration
 
   func configureTableView() {
-    tableView.registerClass(UITableViewCell.self,
+    tableView.registerClass(TableViewCell.self,
       forCellReuseIdentifier: TeamController.reusableIdentifier)
     tableView.backgroundColor = .whiteColor()
     tableView.tableFooterView = UIView(frame: CGRect.zero)
@@ -38,9 +38,10 @@ class TeamController: UITableViewController {
     tableView.delegate = dataSource
   }
 
-  func configureCell(developer: Developer, cell: UITableViewCell) {
+  func configureCell(developer: Developer, cell: TableViewCell) {
     cell.textLabel?.text = developer.name
-    cell.imageView?.setImage(developer.imageURL)
+    cell.imageView?.setImage(developer.imageURL,
+      placeholder: UIImage(named: "placeholder"))
   }
 
   // MARK: - Actions
