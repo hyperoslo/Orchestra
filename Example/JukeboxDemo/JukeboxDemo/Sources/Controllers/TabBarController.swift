@@ -20,6 +20,14 @@ class MainController: UITabBarController {
     return controller
   }()
 
+  lazy var playgroundController: PlaygroundController = {
+    let controller = PlaygroundController()
+    controller.tabBarItem.title = "Playground"
+    controller.tabBarItem.image = UIImage(named: "tabPlayground")
+
+    return controller
+  }()
+
   // MARK: - View Lifecycle
 
   override func viewDidLoad() {
@@ -35,7 +43,8 @@ class MainController: UITabBarController {
 
     viewControllers = [
       projectListController,
-      teamController
+      teamController,
+      playgroundController
     ]
 
     selectedIndex = 0

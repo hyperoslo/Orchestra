@@ -20,6 +20,7 @@
 		D5C6A0941C3ABA5D00CF6130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C6A0921C3ABA5D00CF6130 /* LaunchScreen.storyboard */; };
 		D5C6A0A11C3ABBB600CF6130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C6A09D1C3ABBB600CF6130 /* AppDelegate.swift */; };
 		D5C6A0A31C3ABBB600CF6130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C6A0A01C3ABBB600CF6130 /* Assets.xcassets */; };
+		D5D68A991C4EC813004FB2DD /* PlaygroundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D68A981C4EC813004FB2DD /* PlaygroundController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D5C6A0951C3ABA5D00CF6130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5C6A09D1C3ABBB600CF6130 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5C6A0A01C3ABBB600CF6130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5D68A981C4EC813004FB2DD /* PlaygroundController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				D590F7A01C4DA3E400C6EE92 /* TabBarController.swift */,
 				D590F7A11C4DA3E400C6EE92 /* TeamController.swift */,
 				D590F7A21C4DA3E400C6EE92 /* WelcomeController.swift */,
+				D5D68A981C4EC813004FB2DD /* PlaygroundController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				D590F7AC1C4DB02300C6EE92 /* DataSource.swift in Sources */,
 				D590F7A41C4DA3E400C6EE92 /* ProjectListController.swift in Sources */,
 				D590F7B21C4DC0A800C6EE92 /* TableViewCell.swift in Sources */,
+				D5D68A991C4EC813004FB2DD /* PlaygroundController.swift in Sources */,
 				D5C6A0A11C3ABBB600CF6130 /* AppDelegate.swift in Sources */,
 				D590F7A51C4DA3E400C6EE92 /* TabBarController.swift in Sources */,
 				D590F7A61C4DA3E400C6EE92 /* TeamController.swift in Sources */,
