@@ -1,17 +1,38 @@
 import UIKit
+import Imaginary
 
 class TeamController: UITableViewController {
 
-  static let reusableIdentifier = "ProjectCellIdentifier"
+  static let reusableIdentifier = "TeamCellIdentifier"
 
-  var projects = [Project]()
+  var developers = [Developer]()
+
+  let cellConfigure = { (developer: Developer, cell: UITableViewCell) -> Void in
+    cell.textLabel?.text = developer.name
+    cell.imageView?.setImage(developer.imageURL)
+  }
+
+  let action = { (developer: Developer) -> Void in
+    UIApplication.sharedApplication().openURL(developer.githubURL)
+  }
+
+  lazy var dataSource: DataSource<Developer, UITableViewCell> = { [unowned self] in
+    let dataSource = DataSource(
+      cellIdentifier: TeamController.reusableIdentifier,
+      cellConfigure: self.cellConfigure)
+
+    dataSource.action = self.action
+
+    return dataSource
+  }()
 
   // MARK: - View Lifecycle
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    projects = Project.projects.sort { $0.name < $1.name }
+    developers = Developer.developers.sort { $0.name < $1.name }
+    dataSource.items = developers
     setupTableView()
   }
 
@@ -22,44 +43,7 @@ class TeamController: UITableViewController {
       forCellReuseIdentifier: ProjectListController.reusableIdentifier)
     tableView.backgroundColor = .whiteColor()
     tableView.tableFooterView = UIView(frame: CGRect.zero)
-  }
-}
-
-// MARK: - UITableViewDataSource
-
-extension ProjectListController {
-
-  override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return projects.count
-  }
-
-  override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    guard let cell = tableView.dequeueReusableCellWithIdentifier(ProjectListController.reusableIdentifier)
-      else { return UITableViewCell() }
-
-    let item = projects[indexPath.row]
-
-    cell.textLabel?.text = item.name
-    cell.detailTextLabel?.text = item.githubURL.absoluteString
-
-    return cell
-  }
-}
-
-// MARK: - UITableViewDelegate
-
-extension ProjectListController {
-
-  override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-    return 70
-  }
-
-  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    tableView.deselectRowAtIndexPath(indexPath, animated: true)
-
-    let project = projects[indexPath.row]
-    let controller = ProjectDetailController(project: project)
-
-    navigationController?.pushViewController(controller, animated: true)
+    tableView.dataSource = dataSource
+    tableView.delegate = dataSource
   }
 }

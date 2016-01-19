@@ -2,9 +2,10 @@ import UIKit
 
 class DataSource<Model, Cell> : NSObject, UITableViewDataSource, UITableViewDelegate {
 
-  var items = [Model]()
   let cellIdentifier: String
   let cellConfigure: (Model, Cell) -> Void
+  var height: CGFloat = 64
+  var items = [Model]()
   var action: (Model -> Void)?
 
   init(cellIdentifier: String, cellConfigure: (Model, Cell) -> Void) {
@@ -37,6 +38,10 @@ class DataSource<Model, Cell> : NSObject, UITableViewDataSource, UITableViewDele
   }
 
   // MARK: - UITableViewDelegate
+
+  func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    return 64
+  }
 
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
