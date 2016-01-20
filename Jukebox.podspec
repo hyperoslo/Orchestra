@@ -24,4 +24,5 @@ Pod::Spec.new do |s|
   }
 
   s.frameworks = 'UIKit', 'AVFoundation'
+  s.dependency 'Sugar'
 end
