@@ -6,13 +6,12 @@ class JukeboxSpec: QuickSpec {
 
   override func spec() {
     describe("Jukebox") {
+      var engine: Jukebox!
       let defaultTheme = ThemeList.hyper
-      let amazingTheme = Theme(
-        name: "Amazing",
-        audioFormat: "aiff")
+      let amazingTheme = Theme(name: "Amazing", audioFormat: "aiff")
 
       beforeEach {
-        Jukebox.reset()
+        engine = Jukebox()
       }
 
       describe("#defaultTheme") {
@@ -23,38 +22,38 @@ class JukeboxSpec: QuickSpec {
 
       describe("#player") {
         it("uses a default theme") {
-          expect(Jukebox.player.theme).to(equal(Jukebox.defaultTheme))
+          expect(engine.player.theme).to(equal(Jukebox.defaultTheme))
         }
       }
 
       describe("#autoPlay") {
         it("is enabled by default") {
-          expect(Jukebox.autoPlay).to(beFalse())
+          expect(engine.autoPlay).to(beFalse())
         }
       }
 
       describe("#theme") {
         it("has a valid default theme") {
-          expect(Jukebox.theme).to(equal(Jukebox.defaultTheme))
+          expect(engine.theme).to(equal(Jukebox.defaultTheme))
         }
 
         it("sets a new theme to the player") {
-          Jukebox.theme = amazingTheme
+          engine.theme = amazingTheme
 
-          expect(Jukebox.theme).to(equal(amazingTheme))
-          expect(Jukebox.player.theme).to(equal(Jukebox.theme))
+          expect(engine.theme).to(equal(amazingTheme))
+          expect(engine.player.theme).to(equal(engine.theme))
         }
       }
 
       describe("#reset") {
         it("restores defaults") {
-          Jukebox.theme = amazingTheme
-          Jukebox.autoPlay = true
+          engine.theme = amazingTheme
+          engine.autoPlay = true
 
-          Jukebox.reset()
+          engine.reset()
 
-          expect(Jukebox.theme).to(equal(Jukebox.defaultTheme))
-          expect(Jukebox.autoPlay).to(beFalse())
+          expect(engine.theme).to(equal(Jukebox.defaultTheme))
+          expect(engine.autoPlay).to(beFalse())
         }
       }
     }

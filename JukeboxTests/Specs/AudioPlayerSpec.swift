@@ -19,7 +19,7 @@ class AudioPlayerSpec: QuickSpec {
 
         describe(".play") {
           it("should throw theme bundle not found error") {
-            expect { try audioPlayer.play(.Back)}.to(
+            expect { try audioPlayer.play(.Pop)}.to(
               throwError(AudioPlayer.Error.ThemeBundleNotFound))
             expect(audioPlayer.player).to(beNil())
           }
@@ -27,7 +27,7 @@ class AudioPlayerSpec: QuickSpec {
 
         describe(".playSafely") {
           it("shouldn't start playing") {
-            let result = audioPlayer.playSafely(.Back)
+            let result = audioPlayer.playSafely(.Pop)
             expect(result).to(beFalse())
           }
         }

@@ -1,6 +1,7 @@
 import AVFoundation
+import Sugar
 
-public class AudioPlayer {
+public class AudioPlayer: NSObject {
 
   public enum Error: ErrorType {
     case ThemeBundleNotFound
@@ -17,15 +18,17 @@ public class AudioPlayer {
 
   // MARK: - Initialization
 
-  public init(theme: Theme) {
+  public required init(theme: Theme) {
     self.theme = theme
+    super.init()
   }
 
   // MARK: - Start playback
 
   public func play(sound: Sound) throws -> Bool {
-    try session.setCategory(AVAudioSessionCategoryPlayback)
-    try session.setActive(true)
+    guard player?.playing != true else {
+      return false
+    }
 
     let bundle = NSBundle(forClass: AudioPlayer.self)
 
@@ -45,9 +48,8 @@ public class AudioPlayer {
 
     let URL = NSURL(fileURLWithPath: soundPath)
 
-    if player?.playing == true {
-      stop()
-    }
+    try session.setCategory(AVAudioSessionCategoryPlayback)
+    try session.setActive(true)
 
     player = try AVAudioPlayer(contentsOfURL: URL)
     player?.prepareToPlay()
@@ -75,16 +77,16 @@ public class AudioPlayer {
 
   // MARK: - Stop playback
 
-  public func stop() -> Bool {
-    guard player?.playing == true else {
-      return false
+  public func stop() {
+    player?.volume = 0
+
+    delay(0.5) { [weak self] in
+      guard let weakSelf = self else { return }
+
+      weakSelf.player?.stop()
+      weakSelf.player?.currentTime = 0
+      weakSelf.player = nil
     }
-
-    player?.stop()
-    player?.currentTime = 0
-    player = nil
-
-    return true
   }
 
   public func pause() -> Bool {
@@ -95,5 +97,12 @@ public class AudioPlayer {
     player.pause()
 
     return true
+  }
+}
+
+extension AudioPlayer: AVAudioPlayerDelegate {
+
+  public func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
+    stop()
   }
 }

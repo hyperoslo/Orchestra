@@ -1,4 +1,5 @@
 import UIKit
+import Sugar
 
 extension UITabBar {
 
@@ -12,7 +13,7 @@ extension UITabBar {
     if self !== UITabBar.self { return }
 
     dispatch_once(&Static.token) {
-      MethodSwizzler.swizzleMethod("setSelectedItem:", cls: self)
+      Swizzler.swizzle("setSelectedItem:", cls: self, prefix: "jukebox")
     }
   }
 
@@ -22,7 +23,7 @@ extension UITabBar {
     jukebox_setSelectedItem(tabBarItem)
 
     if selected {
-      Jukebox.autoPlay(Sound.TabBar)
+      Jukebox.engine.autoPlay(Sound.TabBar)
     }
   }
 }

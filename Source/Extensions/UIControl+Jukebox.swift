@@ -1,4 +1,5 @@
 import UIKit
+import Sugar
 
 extension UIButton {
 
@@ -12,8 +13,8 @@ extension UIButton {
     if self !== UIButton.self { return }
 
     dispatch_once(&Static.token) {
-      MethodSwizzler.swizzleMethod("initWithFrame:", cls: self)
-      MethodSwizzler.swizzleMethod("initWithCoder:", cls: self)
+      Swizzler.swizzle("initWithFrame:", cls: self, prefix: "jukebox")
+      Swizzler.swizzle("initWithCoder:", cls: self, prefix: "jukebox")
     }
   }
 
@@ -34,6 +35,6 @@ extension UIButton {
   }
 
   func playSound() {
-    Jukebox.autoPlay(.Button)
+    Jukebox.engine.autoPlay(.Button)
   }
 }
