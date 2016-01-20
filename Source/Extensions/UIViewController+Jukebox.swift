@@ -21,7 +21,9 @@ extension UIViewController {
   func jukebox_viewWillAppear(animated: Bool) {
     jukebox_viewWillAppear(animated)
 
-    guard animated else { return }
+    let valid = parentViewController == nil || parentViewController is UINavigationController
+
+    guard animated && valid else { return }
 
     var sound: Sound?
 
@@ -39,7 +41,9 @@ extension UIViewController {
   func jukebox_viewWillDisappear(animated: Bool) {
     jukebox_viewWillDisappear(animated)
 
-    guard animated else { return }
+    let valid = parentViewController == nil || parentViewController is UINavigationController
+
+    guard animated && valid else { return }
 
     var sound: Sound?
 

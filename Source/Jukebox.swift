@@ -26,9 +26,13 @@ public class Jukebox: NSObject {
     super.init()
 
     notificationCenter.addObserver(self,
-      selector: "windowDidBecomeKey",
-      name: UIWindowDidBecomeKeyNotification,
+      selector: "applicationDidBecomeActive",
+      name: UIApplicationDidBecomeActiveNotification,
       object: nil)
+  }
+
+  deinit {
+    notificationCenter.removeObserver(self)
   }
 
   // MARK: - Configuration
@@ -52,10 +56,7 @@ public class Jukebox: NSObject {
 
   // MARK: - Notifications
 
-  func windowDidBecomeKey() {
-    autoPlay(.Present)
-    notificationCenter.removeObserver(self,
-      name: UIWindowDidBecomeKeyNotification,
-      object: nil)
+  func applicationDidBecomeActive() {
+    autoPlay(.Launch)
   }
 }
