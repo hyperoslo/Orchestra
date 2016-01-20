@@ -1,4 +1,5 @@
 import UIKit
+import Sugar
 
 extension UITabBar {
 
@@ -12,7 +13,7 @@ extension UITabBar {
     if self !== UITabBar.self { return }
 
     dispatch_once(&Static.token) {
-      MethodSwizzler.swizzleMethod("setSelectedItem:", cls: self)
+      Swizzler.swizzle("setSelectedItem:", cls: self, prefix: "jukebox")
     }
   }
 

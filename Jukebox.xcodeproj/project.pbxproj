@@ -16,7 +16,7 @@
 		D576E0FA1C3C81600088AF89 /* soundError.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7ADA1C3C16DF008520D6 /* soundError.aif */; };
 		D576E0FC1C3C81600088AF89 /* soundWarning.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7ADD1C3C16DF008520D6 /* soundWarning.aif */; };
 		D5797B181C3ACB2D00CCB487 /* UIControl+Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */; };
-		D5797B1B1C3ACC3900CCB487 /* MethodSwizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B1A1C3ACC3900CCB487 /* MethodSwizzler.swift */; };
+		D57B9C4F1C4F0ACA009B01C6 /* Sugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57B9C4E1C4F0ACA009B01C6 /* Sugar.framework */; };
 		D590F7941C4D9A2A00C6EE92 /* UITabBar+Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7931C4D9A2A00C6EE92 /* UITabBar+Jukebox.swift */; };
 		D590F79B1C4DA25200C6EE92 /* soundButton.aif in Resources */ = {isa = PBXBuildFile; fileRef = D590F7991C4DA25200C6EE92 /* soundButton.aif */; };
 		D590F79C1C4DA25200C6EE92 /* soundTabBar.aif in Resources */ = {isa = PBXBuildFile; fileRef = D590F79A1C4DA25200C6EE92 /* soundTabBar.aif */; };
@@ -53,7 +53,7 @@
 		D576E0E91C3C81540088AF89 /* soundPresent.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundPresent.aif; sourceTree = "<group>"; };
 		D576E0EA1C3C81540088AF89 /* soundPush.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundPush.aif; sourceTree = "<group>"; };
 		D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Jukebox.swift"; sourceTree = "<group>"; };
-		D5797B1A1C3ACC3900CCB487 /* MethodSwizzler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodSwizzler.swift; sourceTree = "<group>"; };
+		D57B9C4E1C4F0ACA009B01C6 /* Sugar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sugar.framework; path = Carthage/Build/iOS/Sugar.framework; sourceTree = "<group>"; };
 		D590F7931C4D9A2A00C6EE92 /* UITabBar+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBar+Jukebox.swift"; sourceTree = "<group>"; };
 		D590F7991C4DA25200C6EE92 /* soundButton.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundButton.aif; sourceTree = "<group>"; };
 		D590F79A1C4DA25200C6EE92 /* soundTabBar.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundTabBar.aif; sourceTree = "<group>"; };
@@ -85,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D57B9C4F1C4F0ACA009B01C6 /* Sugar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,17 +135,10 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		D5797B191C3ACC2B00CCB487 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				D5797B1A1C3ACC3900CCB487 /* MethodSwizzler.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		D5CB75941C29A3B800412277 = {
 			isa = PBXGroup;
 			children = (
+				D57B9C4E1C4F0ACA009B01C6 /* Sugar.framework */,
 				D5DF49731C2B097200343F13 /* Quick.framework */,
 				D5DF49741C2B097200343F13 /* Nimble.framework */,
 				D5CB75B81C29A4F700412277 /* Source */,
@@ -185,7 +179,6 @@
 		D5CB75B81C29A4F700412277 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D5797B191C3ACC2B00CCB487 /* Helpers */,
 				D5797B161C3ACB1700CCB487 /* Extensions */,
 				D5DF496E1C2B031E00343F13 /* Data */,
 				D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */,
@@ -268,6 +261,7 @@
 				D5CB759A1C29A3B800412277 /* Frameworks */,
 				D5CB759B1C29A3B800412277 /* Headers */,
 				D5CB759C1C29A3B800412277 /* Resources */,
+				D57B9C501C4F0ADA009B01C6 /* Copy frameworks with Carthage */,
 			);
 			buildRules = (
 			);
@@ -371,6 +365,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		D57B9C501C4F0ADA009B01C6 /* Copy frameworks with Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Sugar.framework",
+			);
+			name = "Copy frameworks with Carthage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		D5DF49771C2B09A900343F13 /* Copy frameworks with Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -403,7 +412,6 @@
 			files = (
 				D5DF49811C2B0D2100343F13 /* Jukebox.swift in Sources */,
 				D5DF49721C2B031E00343F13 /* Theme.swift in Sources */,
-				D5797B1B1C3ACC3900CCB487 /* MethodSwizzler.swift in Sources */,
 				D5DF49821C2B0D2100343F13 /* ThemeList.swift in Sources */,
 				D51E7AED1C3C6936008520D6 /* UIViewController+Jukebox.swift in Sources */,
 				D5797B181C3ACB2D00CCB487 /* UIControl+Jukebox.swift in Sources */,
@@ -567,8 +575,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Jukebox/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Jukebox;
 				PRODUCT_NAME = Jukebox;
@@ -585,8 +598,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Jukebox/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Jukebox;
 				PRODUCT_NAME = Jukebox;

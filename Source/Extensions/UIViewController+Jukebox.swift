@@ -1,4 +1,5 @@
 import UIKit
+import Sugar
 
 extension UIViewController {
 
@@ -12,8 +13,8 @@ extension UIViewController {
     if self !== UIViewController.self { return }
 
     dispatch_once(&Static.token) {
-      MethodSwizzler.swizzleMethod("viewWillAppear:", cls: self)
-      MethodSwizzler.swizzleMethod("viewWillDisappear:", cls: self)
+      Swizzler.swizzle("viewWillAppear:", cls: self, prefix: "jukebox")
+      Swizzler.swizzle("viewWillDisappear:", cls: self, prefix: "jukebox")
     }
   }
 
