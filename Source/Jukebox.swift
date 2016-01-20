@@ -1,30 +1,38 @@
 public class Jukebox {
 
+  public static let engine = Jukebox()
   public static let defaultTheme = ThemeList.hyper
-  public private(set) static var player = AudioPlayer(theme: theme)
 
-  // MARK: - Configuration
+  public private(set) var player: AudioPlayer
 
-  public static var autoPlay = false
+  public var autoPlay = false
 
-  public static var theme: Theme = defaultTheme {
+  public var theme = Jukebox.defaultTheme {
     didSet {
       player = AudioPlayer(theme: theme)
     }
   }
 
-  public static func reset() {
+  // MARK: - Initialization
+
+  init() {
+    player = AudioPlayer(theme: theme)
+  }
+
+  // MARK: - Configuration
+
+  public func reset() {
     autoPlay = false
-    theme = defaultTheme
+    theme = Jukebox.defaultTheme
   }
 
   // MARK: - Player
 
-  public static func play(sound: Sound) throws -> Bool {
+  public func play(sound: Sound) throws -> Bool {
     return try player.play(sound)
   }
 
-  static func autoPlay(sound: Sound) {
+  func autoPlay(sound: Sound) {
     guard autoPlay else { return }
 
     player.playSafely(sound)

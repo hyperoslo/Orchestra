@@ -22,7 +22,7 @@ extension UITabBar {
     jukebox_setSelectedItem(tabBarItem)
 
     if selected {
-      Jukebox.autoPlay(Sound.TabBar)
+      Jukebox.engine.autoPlay(Sound.TabBar)
     }
   }
 }

@@ -32,7 +32,7 @@ extension UIViewController {
 
     guard let autoSound = sound else { return }
 
-    Jukebox.autoPlay(autoSound)
+    Jukebox.engine.autoPlay(autoSound)
   }
 
   func jukebox_viewWillDisappear(animated: Bool) {
@@ -50,7 +50,7 @@ extension UIViewController {
 
     guard let autoSound = sound else { return }
 
-    Jukebox.autoPlay(autoSound)
+    Jukebox.engine.autoPlay(autoSound)
   }
 }
 

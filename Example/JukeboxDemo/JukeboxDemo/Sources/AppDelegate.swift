@@ -18,13 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    Jukebox.autoPlay = true
+
     window = UIWindow(frame: UIScreen.mainScreen().bounds)
     window?.rootViewController = navigationController
     window?.makeKeyAndVisible()
 
     UINavigationBar.appearance().tintColor = UIColor.hex("F57D2D")
-
-    Jukebox.autoPlay = true
 
     return true
   }

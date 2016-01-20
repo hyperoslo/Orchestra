@@ -34,6 +34,6 @@ extension UIButton {
   }
 
   func playSound() {
-    Jukebox.autoPlay(.Button)
+    Jukebox.engine.autoPlay(.Button)
   }
 }
