@@ -1,4 +1,5 @@
 public enum Sound: String {
+  case Launch = "soundLaunch"
   case Push = "soundPush"
   case Pop = "soundPop"
   case Present = "soundPresent"

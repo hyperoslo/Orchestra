@@ -4,7 +4,9 @@ PODS:
   - Hue (1.0.0)
   - Imaginary (0.1.0):
     - Cache
-  - Jukebox (0.1.0)
+  - Jukebox (0.1.0):
+    - Sugar
+  - Sugar (1.0.3)
 
 DEPENDENCIES:
   - Cache (from `https://github.com/hyperoslo/Cache`)
@@ -39,6 +41,7 @@ SPEC CHECKSUMS:
   Cartography: 70af183a248547694a8cfaa6b989cb7e04589985
   Hue: 44ae8b1091935fcc75055174095ab04653989235
   Imaginary: feaea646440c68a9b6ed66a46597d548b9a44207
-  Jukebox: aad2699ae5a2bb4ede7909bf4b8f2616b26c4eac
+  Jukebox: 1ce2c559505d0c3e1ada60d535312f10c7bdf38b
+  Sugar: 0dec8fa53840c88c01579e61bcff8edbe468cb41
 
 COCOAPODS: 0.39.0
