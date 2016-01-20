@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    Jukebox.autoPlay = true
+    Jukebox.engine.autoPlay = true
 
     window = UIWindow(frame: UIScreen.mainScreen().bounds)
     window?.rootViewController = navigationController

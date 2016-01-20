@@ -1,11 +1,12 @@
-public class Jukebox {
+import UIKit
+
+public class Jukebox: NSObject {
 
   public static let engine = Jukebox()
   public static let defaultTheme = ThemeList.hyper
 
-  public private(set) var player: AudioPlayer
-
   public var autoPlay = false
+  public private(set) var player: AudioPlayer
 
   public var theme = Jukebox.defaultTheme {
     didSet {
@@ -13,10 +14,21 @@ public class Jukebox {
     }
   }
 
+  var notificationCenter: NSNotificationCenter {
+    return NSNotificationCenter.defaultCenter()
+  }
+
   // MARK: - Initialization
 
-  init() {
+  override init() {
     player = AudioPlayer(theme: theme)
+
+    super.init()
+
+    notificationCenter.addObserver(self,
+      selector: "windowDidBecomeKey",
+      name: UIWindowDidBecomeKeyNotification,
+      object: nil)
   }
 
   // MARK: - Configuration
@@ -36,5 +48,14 @@ public class Jukebox {
     guard autoPlay else { return }
 
     player.playSafely(sound)
+  }
+
+  // MARK: - Notifications
+
+  func windowDidBecomeKey() {
+    autoPlay(.Present)
+    notificationCenter.removeObserver(self,
+      name: UIWindowDidBecomeKeyNotification,
+      object: nil)
   }
 }
