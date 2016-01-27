@@ -1,9 +1,9 @@
-# Jukebox
+# Orchestra
 
-[![CI Status](http://img.shields.io/travis/hyperoslo/Jukebox.svg?style=flat)](https://travis-ci.org/hyperoslo/Jukebox)
-[![Version](https://img.shields.io/cocoapods/v/Jukebox.svg?style=flat)](http://cocoadocs.org/docsets/Jukebox)
-[![License](https://img.shields.io/cocoapods/l/Jukebox.svg?style=flat)](http://cocoadocs.org/docsets/Jukebox)
-[![Platform](https://img.shields.io/cocoapods/p/Jukebox.svg?style=flat)](http://cocoadocs.org/docsets/Jukebox)
+[![CI Status](http://img.shields.io/travis/hyperoslo/Orchestra.svg?style=flat)](https://travis-ci.org/hyperoslo/Orchestra)
+[![Version](https://img.shields.io/cocoapods/v/Orchestra.svg?style=flat)](http://cocoadocs.org/docsets/Orchestra)
+[![License](https://img.shields.io/cocoapods/l/Orchestra.svg?style=flat)](http://cocoadocs.org/docsets/Orchestra)
+[![Platform](https://img.shields.io/cocoapods/p/Orchestra.svg?style=flat)](http://cocoadocs.org/docsets/Orchestra)
 
 ## Usage
 
@@ -13,11 +13,11 @@
 
 ## Installation
 
-**Jukebox** is available through [CocoaPods](http://cocoapods.org). To install
+**Orchestra** is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Jukebox'
+pod 'Orchestra'
 ```
 
 ## Author
@@ -26,4 +26,4 @@ Hyper Interaktiv AS, ios@hyper.no
 
 ## License
 
-**Jukebox** is available under the MIT license. See the LICENSE file for more info.
+**Orchestra** is available under the MIT license. See the LICENSE file for more info.
