@@ -1,28 +1,28 @@
 import Quick
 import Nimble
-@testable import Jukebox
+@testable import Orchestra
 
-class JukeboxSpec: QuickSpec {
+class KapellmeisterSpec: QuickSpec {
 
   override func spec() {
-    describe("Jukebox") {
-      var engine: Jukebox!
+    describe("Kapellmeister") {
+      var engine: Kapellmeister!
       let defaultTheme = ThemeList.hyper
       let amazingTheme = Theme(name: "Amazing", audioFormat: "aiff")
 
       beforeEach {
-        engine = Jukebox()
+        engine = Kapellmeister()
       }
 
       describe("#defaultTheme") {
         it("has a valid default theme") {
-          expect(Jukebox.defaultTheme).to(equal(defaultTheme))
+          expect(Kapellmeister.defaultTheme).to(equal(defaultTheme))
         }
       }
 
       describe("#player") {
         it("uses a default theme") {
-          expect(engine.player.theme).to(equal(Jukebox.defaultTheme))
+          expect(engine.player.theme).to(equal(Kapellmeister.defaultTheme))
         }
       }
 
@@ -34,7 +34,7 @@ class JukeboxSpec: QuickSpec {
 
       describe("#theme") {
         it("has a valid default theme") {
-          expect(engine.theme).to(equal(Jukebox.defaultTheme))
+          expect(engine.theme).to(equal(Kapellmeister.defaultTheme))
         }
 
         it("sets a new theme to the player") {
@@ -52,7 +52,7 @@ class JukeboxSpec: QuickSpec {
 
           engine.reset()
 
-          expect(engine.theme).to(equal(Jukebox.defaultTheme))
+          expect(engine.theme).to(equal(Kapellmeister.defaultTheme))
           expect(engine.autoPlay).to(beFalse())
         }
       }

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D51E7AEB1C3C1B2E008520D6 /* Orchestra.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D52D724C1C3BF710009A4426 /* Orchestra.bundle */; };
 		D51E7AED1C3C6936008520D6 /* UIViewController+Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E7AEC1C3C6936008520D6 /* UIViewController+Jukebox.swift */; };
 		D5797B181C3ACB2D00CCB487 /* UIControl+Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */; };
 		D57B9C4F1C4F0ACA009B01C6 /* Sugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57B9C4E1C4F0ACA009B01C6 /* Sugar.framework */; };
@@ -20,6 +19,10 @@
 		D57B9C5F1C4F0D90009B01C6 /* soundError.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7ADA1C3C16DF008520D6 /* soundError.aif */; };
 		D57B9C601C4F0D90009B01C6 /* soundWarning.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7ADD1C3C16DF008520D6 /* soundWarning.aif */; };
 		D57B9C631C4F0D9B009B01C6 /* soundLaunch.aif in Resources */ = {isa = PBXBuildFile; fileRef = D57B9C611C4F0D98009B01C6 /* soundLaunch.aif */; };
+		D57EFAB91C59829100BB1EF7 /* AudioPlayerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EFAB01C59824200BB1EF7 /* AudioPlayerSpec.swift */; };
+		D57EFABA1C59829100BB1EF7 /* ThemeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EFAB21C59824200BB1EF7 /* ThemeSpec.swift */; };
+		D57EFABB1C59829100BB1EF7 /* KapellmeisterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EFAB31C59824200BB1EF7 /* KapellmeisterSpec.swift */; };
+		D57EFABC1C59846600BB1EF7 /* OrchestraSoundsHyper.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D52D724C1C3BF710009A4426 /* OrchestraSoundsHyper.bundle */; };
 		D590F7941C4D9A2A00C6EE92 /* UITabBar+Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7931C4D9A2A00C6EE92 /* UITabBar+Jukebox.swift */; };
 		D5CB75A91C29A3B800412277 /* Orchestra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CB759E1C29A3B800412277 /* Orchestra.framework */; };
 		D5DF495E1C2ABD2900343F13 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */; };
@@ -27,11 +30,8 @@
 		D5DF49721C2B031E00343F13 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49701C2B031E00343F13 /* Theme.swift */; };
 		D5DF49751C2B097200343F13 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF49731C2B097200343F13 /* Quick.framework */; };
 		D5DF49761C2B097200343F13 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DF49741C2B097200343F13 /* Nimble.framework */; };
-		D5DF49811C2B0D2100343F13 /* Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF497F1C2B0D2100343F13 /* Jukebox.swift */; };
+		D5DF49811C2B0D2100343F13 /* Kapellmeister.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF497F1C2B0D2100343F13 /* Kapellmeister.swift */; };
 		D5DF49821C2B0D2100343F13 /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49801C2B0D2100343F13 /* ThemeList.swift */; };
-		D5DF498A1C2B170500343F13 /* ThemeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49881C2B170500343F13 /* ThemeSpec.swift */; };
-		D5DF498B1C2B170500343F13 /* JukeboxSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49891C2B170500343F13 /* JukeboxSpec.swift */; };
-		D5DF498D1C2B1B3B00343F13 /* AudioPlayerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF498C1C2B1B3B00343F13 /* AudioPlayerSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		D51E7ADA1C3C16DF008520D6 /* soundError.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundError.aif; sourceTree = "<group>"; };
 		D51E7ADD1C3C16DF008520D6 /* soundWarning.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundWarning.aif; sourceTree = "<group>"; };
 		D51E7AEC1C3C6936008520D6 /* UIViewController+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Jukebox.swift"; sourceTree = "<group>"; };
-		D52D724C1C3BF710009A4426 /* Orchestra.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Orchestra.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52D724C1C3BF710009A4426 /* OrchestraSoundsHyper.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrchestraSoundsHyper.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D576E0E71C3C81540088AF89 /* soundDismiss.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundDismiss.aif; sourceTree = "<group>"; };
 		D576E0E81C3C81540088AF89 /* soundPop.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundPop.aif; sourceTree = "<group>"; };
 		D576E0E91C3C81540088AF89 /* soundPresent.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundPresent.aif; sourceTree = "<group>"; };
@@ -56,23 +56,23 @@
 		D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Jukebox.swift"; sourceTree = "<group>"; };
 		D57B9C4E1C4F0ACA009B01C6 /* Sugar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sugar.framework; path = Carthage/Build/iOS/Sugar.framework; sourceTree = "<group>"; };
 		D57B9C611C4F0D98009B01C6 /* soundLaunch.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundLaunch.aif; sourceTree = "<group>"; };
+		D57EFAAC1C59824200BB1EF7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D57EFAAE1C59824200BB1EF7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D57EFAB01C59824200BB1EF7 /* AudioPlayerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerSpec.swift; sourceTree = "<group>"; };
+		D57EFAB21C59824200BB1EF7 /* ThemeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeSpec.swift; sourceTree = "<group>"; };
+		D57EFAB31C59824200BB1EF7 /* KapellmeisterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KapellmeisterSpec.swift; sourceTree = "<group>"; };
 		D590F7931C4D9A2A00C6EE92 /* UITabBar+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBar+Jukebox.swift"; sourceTree = "<group>"; };
 		D590F7991C4DA25200C6EE92 /* soundButton.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundButton.aif; sourceTree = "<group>"; };
 		D590F79A1C4DA25200C6EE92 /* soundTabBar.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundTabBar.aif; sourceTree = "<group>"; };
 		D5CB759E1C29A3B800412277 /* Orchestra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Orchestra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5CB75A31C29A3B800412277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5CB75A81C29A3B800412277 /* Orchestra.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Orchestra.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5CB75AF1C29A3B800412277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5CB75A81C29A3B800412277 /* Orchestra-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Orchestra-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		D5DF496F1C2B031E00343F13 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		D5DF49701C2B031E00343F13 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D5DF49731C2B097200343F13 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		D5DF49741C2B097200343F13 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		D5DF497F1C2B0D2100343F13 /* Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jukebox.swift; sourceTree = "<group>"; };
+		D5DF497F1C2B0D2100343F13 /* Kapellmeister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kapellmeister.swift; sourceTree = "<group>"; };
 		D5DF49801C2B0D2100343F13 /* ThemeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
-		D5DF49881C2B170500343F13 /* ThemeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeSpec.swift; sourceTree = "<group>"; };
-		D5DF49891C2B170500343F13 /* JukeboxSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JukeboxSpec.swift; sourceTree = "<group>"; };
-		D5DF498C1C2B1B3B00343F13 /* AudioPlayerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +138,41 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		D57EFAAB1C59824200BB1EF7 /* Orchestra */ = {
+			isa = PBXGroup;
+			children = (
+				D57EFAAC1C59824200BB1EF7 /* Info.plist */,
+			);
+			path = Orchestra;
+			sourceTree = "<group>";
+		};
+		D57EFAAD1C59824200BB1EF7 /* OrchestraTests */ = {
+			isa = PBXGroup;
+			children = (
+				D57EFAAE1C59824200BB1EF7 /* Info.plist */,
+				D57EFAAF1C59824200BB1EF7 /* Specs */,
+			);
+			path = OrchestraTests;
+			sourceTree = "<group>";
+		};
+		D57EFAAF1C59824200BB1EF7 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				D57EFAB01C59824200BB1EF7 /* AudioPlayerSpec.swift */,
+				D57EFAB11C59824200BB1EF7 /* Data */,
+				D57EFAB31C59824200BB1EF7 /* KapellmeisterSpec.swift */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		D57EFAB11C59824200BB1EF7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D57EFAB21C59824200BB1EF7 /* ThemeSpec.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		D5CB75941C29A3B800412277 = {
 			isa = PBXGroup;
 			children = (
@@ -145,9 +180,9 @@
 				D5DF49731C2B097200343F13 /* Quick.framework */,
 				D5DF49741C2B097200343F13 /* Nimble.framework */,
 				D5CB75B81C29A4F700412277 /* Source */,
-				D5CB75A01C29A3B800412277 /* Jukebox */,
-				D5CB75AC1C29A3B800412277 /* JukeboxTests */,
 				D51E7AD71C3C16DF008520D6 /* Sounds */,
+				D57EFAAB1C59824200BB1EF7 /* Orchestra */,
+				D57EFAAD1C59824200BB1EF7 /* OrchestraTests */,
 				D5CB759F1C29A3B800412277 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -156,27 +191,10 @@
 			isa = PBXGroup;
 			children = (
 				D5CB759E1C29A3B800412277 /* Orchestra.framework */,
-				D5CB75A81C29A3B800412277 /* Orchestra.xctest */,
-				D52D724C1C3BF710009A4426 /* Orchestra.bundle */,
+				D5CB75A81C29A3B800412277 /* Orchestra-iOS-Tests.xctest */,
+				D52D724C1C3BF710009A4426 /* OrchestraSoundsHyper.bundle */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D5CB75A01C29A3B800412277 /* Jukebox */ = {
-			isa = PBXGroup;
-			children = (
-				D5CB75A31C29A3B800412277 /* Info.plist */,
-			);
-			path = Jukebox;
-			sourceTree = "<group>";
-		};
-		D5CB75AC1C29A3B800412277 /* JukeboxTests */ = {
-			isa = PBXGroup;
-			children = (
-				D5DF49851C2B0DA700343F13 /* Supporting Files */,
-				D5DF49861C2B170500343F13 /* Specs */,
-			);
-			path = JukeboxTests;
 			sourceTree = "<group>";
 		};
 		D5CB75B81C29A4F700412277 /* Source */ = {
@@ -186,7 +204,7 @@
 				D5DF496E1C2B031E00343F13 /* Data */,
 				D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */,
 				D5DF49801C2B0D2100343F13 /* ThemeList.swift */,
-				D5DF497F1C2B0D2100343F13 /* Jukebox.swift */,
+				D5DF497F1C2B0D2100343F13 /* Kapellmeister.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -196,32 +214,6 @@
 			children = (
 				D5DF496F1C2B031E00343F13 /* Sound.swift */,
 				D5DF49701C2B031E00343F13 /* Theme.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		D5DF49851C2B0DA700343F13 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D5CB75AF1C29A3B800412277 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D5DF49861C2B170500343F13 /* Specs */ = {
-			isa = PBXGroup;
-			children = (
-				D5DF49871C2B170500343F13 /* Data */,
-				D5DF498C1C2B1B3B00343F13 /* AudioPlayerSpec.swift */,
-				D5DF49891C2B170500343F13 /* JukeboxSpec.swift */,
-			);
-			path = Specs;
-			sourceTree = "<group>";
-		};
-		D5DF49871C2B170500343F13 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				D5DF49881C2B170500343F13 /* ThemeSpec.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -253,7 +245,7 @@
 			);
 			name = OrchestraSoundsHyper;
 			productName = JukeboxSoundsHyper;
-			productReference = D52D724C1C3BF710009A4426 /* Orchestra.bundle */;
+			productReference = D52D724C1C3BF710009A4426 /* OrchestraSoundsHyper.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		D5CB759D1C29A3B800412277 /* Orchestra-iOS */ = {
@@ -291,7 +283,7 @@
 			);
 			name = "Orchestra-iOS-Tests";
 			productName = JukeboxTests;
-			productReference = D5CB75A81C29A3B800412277 /* Orchestra.xctest */;
+			productReference = D5CB75A81C29A3B800412277 /* Orchestra-iOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -355,7 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D51E7AEB1C3C1B2E008520D6 /* Orchestra.bundle in Resources */,
+				D57EFABC1C59846600BB1EF7 /* OrchestraSoundsHyper.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5DF49811C2B0D2100343F13 /* Jukebox.swift in Sources */,
+				D5DF49811C2B0D2100343F13 /* Kapellmeister.swift in Sources */,
 				D5DF49721C2B031E00343F13 /* Theme.swift in Sources */,
 				D5DF49821C2B0D2100343F13 /* ThemeList.swift in Sources */,
 				D51E7AED1C3C6936008520D6 /* UIViewController+Jukebox.swift in Sources */,
@@ -429,9 +421,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5DF498D1C2B1B3B00343F13 /* AudioPlayerSpec.swift in Sources */,
-				D5DF498A1C2B170500343F13 /* ThemeSpec.swift in Sources */,
-				D5DF498B1C2B170500343F13 /* JukeboxSpec.swift in Sources */,
+				D57EFABA1C59829100BB1EF7 /* ThemeSpec.swift in Sources */,
+				D57EFAB91C59829100BB1EF7 /* AudioPlayerSpec.swift in Sources */,
+				D57EFABB1C59829100BB1EF7 /* KapellmeisterSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +448,7 @@
 				INFOPLIST_FILE = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "";
-				PRODUCT_NAME = Orchestra;
+				PRODUCT_NAME = OrchestraSoundsHyper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SYMROOT = build;
@@ -474,7 +466,7 @@
 				INFOPLIST_FILE = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "";
-				PRODUCT_NAME = Orchestra;
+				PRODUCT_NAME = OrchestraSoundsHyper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SYMROOT = build;
@@ -583,11 +575,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Jukebox/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Orchestra/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Jukebox;
+				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Orchestra;
 				PRODUCT_NAME = Orchestra;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -606,11 +598,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Jukebox/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Orchestra/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Jukebox;
+				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Orchestra;
 				PRODUCT_NAME = Orchestra;
 				SKIP_INSTALL = YES;
 			};
@@ -623,10 +615,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/JukeboxTests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/OrchestraTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxTests;
-				PRODUCT_NAME = Orchestra;
+				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.OrchestraTests;
+				PRODUCT_NAME = "Orchestra-iOS-Tests";
 			};
 			name = Debug;
 		};
@@ -637,10 +629,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/JukeboxTests/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/OrchestraTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxTests;
-				PRODUCT_NAME = Orchestra;
+				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.OrchestraTests;
+				PRODUCT_NAME = "Orchestra-iOS-Tests";
 			};
 			name = Release;
 		};

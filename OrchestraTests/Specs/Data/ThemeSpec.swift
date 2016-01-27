@@ -1,6 +1,6 @@
 import Quick
 import Nimble
-@testable import Jukebox
+@testable import Orchestra
 
 class ThemeSpec: QuickSpec {
 
@@ -16,7 +16,7 @@ class ThemeSpec: QuickSpec {
 
       describe("#bundlePrefix") {
         it("has a valid bundle prefix") {
-          expect(Theme.bundlePrefix).to(equal("JukeboxSounds"))
+          expect(Theme.bundlePrefix).to(equal("OrchestraSounds"))
         }
       }
 

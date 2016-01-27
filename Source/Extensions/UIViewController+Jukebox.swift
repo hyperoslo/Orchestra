@@ -13,13 +13,13 @@ extension UIViewController {
     if self !== UIViewController.self { return }
 
     dispatch_once(&Static.token) {
-      Swizzler.swizzle("viewWillAppear:", cls: self, prefix: "jukebox")
-      Swizzler.swizzle("viewWillDisappear:", cls: self, prefix: "jukebox")
+      Swizzler.swizzle("viewWillAppear:", cls: self, prefix: "orchestra")
+      Swizzler.swizzle("viewWillDisappear:", cls: self, prefix: "orchestra")
     }
   }
 
-  func jukebox_viewWillAppear(animated: Bool) {
-    jukebox_viewWillAppear(animated)
+  func orchestra_viewWillAppear(animated: Bool) {
+    orchestra_viewWillAppear(animated)
 
     let valid = parentViewController == nil || parentViewController is UINavigationController
 
@@ -35,11 +35,11 @@ extension UIViewController {
 
     guard let autoSound = sound else { return }
 
-    Jukebox.engine.autoPlay(autoSound)
+    Kapellmeister.engine.autoPlay(autoSound)
   }
 
-  func jukebox_viewWillDisappear(animated: Bool) {
-    jukebox_viewWillDisappear(animated)
+  func orchestra_viewWillDisappear(animated: Bool) {
+    orchestra_viewWillDisappear(animated)
 
     let valid = parentViewController == nil || parentViewController is UINavigationController
 
@@ -55,7 +55,7 @@ extension UIViewController {
 
     guard let autoSound = sound else { return }
 
-    Jukebox.engine.autoPlay(autoSound)
+    Kapellmeister.engine.autoPlay(autoSound)
   }
 }
 

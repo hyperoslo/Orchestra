@@ -1,6 +1,6 @@
 import Quick
 import Nimble
-@testable import Jukebox
+@testable import Orchestra
 
 class AudioPlayerSpec: QuickSpec {
 
@@ -41,8 +41,7 @@ class AudioPlayerSpec: QuickSpec {
 
         describe(".stop") {
           it("shouldn't stop") {
-            let result = audioPlayer.stop()
-            expect(result).to(beFalse())
+            audioPlayer.stop()
             expect(audioPlayer.player).to(beNil())
           }
         }

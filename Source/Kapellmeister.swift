@@ -1,14 +1,14 @@
 import UIKit
 
-public class Jukebox: NSObject {
+public class Kapellmeister: NSObject {
 
-  public static let engine = Jukebox()
+  public static let engine = Kapellmeister()
   public static let defaultTheme = ThemeList.hyper
 
   public var autoPlay = false
   public private(set) var player: AudioPlayer
 
-  public var theme = Jukebox.defaultTheme {
+  public var theme = Kapellmeister.defaultTheme {
     didSet {
       player = AudioPlayer(theme: theme)
     }
@@ -39,7 +39,7 @@ public class Jukebox: NSObject {
 
   public func reset() {
     autoPlay = false
-    theme = Jukebox.defaultTheme
+    theme = Kapellmeister.defaultTheme
   }
 
   // MARK: - Player

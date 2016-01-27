@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D5CB759D1C29A3B800412277"
-               BuildableName = "Jukebox.framework"
+               BuildableName = "Orchestra.framework"
                BlueprintName = "Orchestra-iOS"
                ReferencedContainer = "container:Orchestra.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D5CB759D1C29A3B800412277"
-            BuildableName = "Jukebox.framework"
+            BuildableName = "Orchestra.framework"
             BlueprintName = "Orchestra-iOS"
             ReferencedContainer = "container:Orchestra.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D5CB759D1C29A3B800412277"
-            BuildableName = "Jukebox.framework"
+            BuildableName = "Orchestra.framework"
             BlueprintName = "Orchestra-iOS"
             ReferencedContainer = "container:Orchestra.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D5CB759D1C29A3B800412277"
-            BuildableName = "Jukebox.framework"
+            BuildableName = "Orchestra.framework"
             BlueprintName = "Orchestra-iOS"
             ReferencedContainer = "container:Orchestra.xcodeproj">
          </BuildableReference>
