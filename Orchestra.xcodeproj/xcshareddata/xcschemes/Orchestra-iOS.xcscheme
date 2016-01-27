@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D5CB75A71C29A3B800412277"
-               BuildableName = "Orchestra.xctest"
+               BuildableName = "Orchestra-iOS-Tests.xctest"
                BlueprintName = "Orchestra-iOS-Tests"
                ReferencedContainer = "container:Orchestra.xcodeproj">
             </BuildableReference>
