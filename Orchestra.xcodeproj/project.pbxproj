@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D51E7AEB1C3C1B2E008520D6 /* JukeboxSoundsHyper.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D52D724C1C3BF710009A4426 /* JukeboxSoundsHyper.bundle */; };
+		D51E7AEB1C3C1B2E008520D6 /* Orchestra.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D52D724C1C3BF710009A4426 /* Orchestra.bundle */; };
 		D51E7AED1C3C6936008520D6 /* UIViewController+Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E7AEC1C3C6936008520D6 /* UIViewController+Jukebox.swift */; };
 		D5797B181C3ACB2D00CCB487 /* UIControl+Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */; };
 		D57B9C4F1C4F0ACA009B01C6 /* Sugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57B9C4E1C4F0ACA009B01C6 /* Sugar.framework */; };
@@ -21,7 +21,7 @@
 		D57B9C601C4F0D90009B01C6 /* soundWarning.aif in Resources */ = {isa = PBXBuildFile; fileRef = D51E7ADD1C3C16DF008520D6 /* soundWarning.aif */; };
 		D57B9C631C4F0D9B009B01C6 /* soundLaunch.aif in Resources */ = {isa = PBXBuildFile; fileRef = D57B9C611C4F0D98009B01C6 /* soundLaunch.aif */; };
 		D590F7941C4D9A2A00C6EE92 /* UITabBar+Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7931C4D9A2A00C6EE92 /* UITabBar+Jukebox.swift */; };
-		D5CB75A91C29A3B800412277 /* Jukebox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CB759E1C29A3B800412277 /* Jukebox.framework */; };
+		D5CB75A91C29A3B800412277 /* Orchestra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CB759E1C29A3B800412277 /* Orchestra.framework */; };
 		D5DF495E1C2ABD2900343F13 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */; };
 		D5DF49711C2B031E00343F13 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF496F1C2B031E00343F13 /* Sound.swift */; };
 		D5DF49721C2B031E00343F13 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF49701C2B031E00343F13 /* Theme.swift */; };
@@ -48,7 +48,7 @@
 		D51E7ADA1C3C16DF008520D6 /* soundError.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundError.aif; sourceTree = "<group>"; };
 		D51E7ADD1C3C16DF008520D6 /* soundWarning.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundWarning.aif; sourceTree = "<group>"; };
 		D51E7AEC1C3C6936008520D6 /* UIViewController+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Jukebox.swift"; sourceTree = "<group>"; };
-		D52D724C1C3BF710009A4426 /* JukeboxSoundsHyper.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JukeboxSoundsHyper.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52D724C1C3BF710009A4426 /* Orchestra.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Orchestra.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D576E0E71C3C81540088AF89 /* soundDismiss.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundDismiss.aif; sourceTree = "<group>"; };
 		D576E0E81C3C81540088AF89 /* soundPop.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundPop.aif; sourceTree = "<group>"; };
 		D576E0E91C3C81540088AF89 /* soundPresent.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundPresent.aif; sourceTree = "<group>"; };
@@ -59,9 +59,9 @@
 		D590F7931C4D9A2A00C6EE92 /* UITabBar+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBar+Jukebox.swift"; sourceTree = "<group>"; };
 		D590F7991C4DA25200C6EE92 /* soundButton.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundButton.aif; sourceTree = "<group>"; };
 		D590F79A1C4DA25200C6EE92 /* soundTabBar.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundTabBar.aif; sourceTree = "<group>"; };
-		D5CB759E1C29A3B800412277 /* Jukebox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Jukebox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5CB759E1C29A3B800412277 /* Orchestra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Orchestra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CB75A31C29A3B800412277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5CB75A81C29A3B800412277 /* Jukebox-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jukebox-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5CB75A81C29A3B800412277 /* Orchestra.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Orchestra.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5CB75AF1C29A3B800412277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		D5DF496F1C2B031E00343F13 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 			files = (
 				D5DF49751C2B097200343F13 /* Quick.framework in Frameworks */,
 				D5DF49761C2B097200343F13 /* Nimble.framework in Frameworks */,
-				D5CB75A91C29A3B800412277 /* Jukebox.framework in Frameworks */,
+				D5CB75A91C29A3B800412277 /* Orchestra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,9 +155,9 @@
 		D5CB759F1C29A3B800412277 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D5CB759E1C29A3B800412277 /* Jukebox.framework */,
-				D5CB75A81C29A3B800412277 /* Jukebox-iOS-Tests.xctest */,
-				D52D724C1C3BF710009A4426 /* JukeboxSoundsHyper.bundle */,
+				D5CB759E1C29A3B800412277 /* Orchestra.framework */,
+				D5CB75A81C29A3B800412277 /* Orchestra.xctest */,
+				D52D724C1C3BF710009A4426 /* Orchestra.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,9 +239,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D52D724B1C3BF710009A4426 /* JukeboxSoundsHyper */ = {
+		D52D724B1C3BF710009A4426 /* OrchestraSoundsHyper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D52D72511C3BF710009A4426 /* Build configuration list for PBXNativeTarget "JukeboxSoundsHyper" */;
+			buildConfigurationList = D52D72511C3BF710009A4426 /* Build configuration list for PBXNativeTarget "OrchestraSoundsHyper" */;
 			buildPhases = (
 				D52D72481C3BF710009A4426 /* Sources */,
 				D52D72491C3BF710009A4426 /* Frameworks */,
@@ -251,14 +251,14 @@
 			);
 			dependencies = (
 			);
-			name = JukeboxSoundsHyper;
+			name = OrchestraSoundsHyper;
 			productName = JukeboxSoundsHyper;
-			productReference = D52D724C1C3BF710009A4426 /* JukeboxSoundsHyper.bundle */;
+			productReference = D52D724C1C3BF710009A4426 /* Orchestra.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		D5CB759D1C29A3B800412277 /* Jukebox-iOS */ = {
+		D5CB759D1C29A3B800412277 /* Orchestra-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5CB75B21C29A3B800412277 /* Build configuration list for PBXNativeTarget "Jukebox-iOS" */;
+			buildConfigurationList = D5CB75B21C29A3B800412277 /* Build configuration list for PBXNativeTarget "Orchestra-iOS" */;
 			buildPhases = (
 				D5CB75991C29A3B800412277 /* Sources */,
 				D5CB759A1C29A3B800412277 /* Frameworks */,
@@ -270,14 +270,14 @@
 			);
 			dependencies = (
 			);
-			name = "Jukebox-iOS";
+			name = "Orchestra-iOS";
 			productName = Jukebox;
-			productReference = D5CB759E1C29A3B800412277 /* Jukebox.framework */;
+			productReference = D5CB759E1C29A3B800412277 /* Orchestra.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D5CB75A71C29A3B800412277 /* Jukebox-iOS-Tests */ = {
+		D5CB75A71C29A3B800412277 /* Orchestra-iOS-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5CB75B51C29A3B800412277 /* Build configuration list for PBXNativeTarget "Jukebox-iOS-Tests" */;
+			buildConfigurationList = D5CB75B51C29A3B800412277 /* Build configuration list for PBXNativeTarget "Orchestra-iOS-Tests" */;
 			buildPhases = (
 				D5CB75A41C29A3B800412277 /* Sources */,
 				D5CB75A51C29A3B800412277 /* Frameworks */,
@@ -289,9 +289,9 @@
 			dependencies = (
 				D5CB75AB1C29A3B800412277 /* PBXTargetDependency */,
 			);
-			name = "Jukebox-iOS-Tests";
+			name = "Orchestra-iOS-Tests";
 			productName = JukeboxTests;
-			productReference = D5CB75A81C29A3B800412277 /* Jukebox-iOS-Tests.xctest */;
+			productReference = D5CB75A81C29A3B800412277 /* Orchestra.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -315,7 +315,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D5CB75981C29A3B800412277 /* Build configuration list for PBXProject "Jukebox" */;
+			buildConfigurationList = D5CB75981C29A3B800412277 /* Build configuration list for PBXProject "Orchestra" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -327,9 +327,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D5CB759D1C29A3B800412277 /* Jukebox-iOS */,
-				D5CB75A71C29A3B800412277 /* Jukebox-iOS-Tests */,
-				D52D724B1C3BF710009A4426 /* JukeboxSoundsHyper */,
+				D5CB759D1C29A3B800412277 /* Orchestra-iOS */,
+				D5CB75A71C29A3B800412277 /* Orchestra-iOS-Tests */,
+				D52D724B1C3BF710009A4426 /* OrchestraSoundsHyper */,
 			);
 		};
 /* End PBXProject section */
@@ -355,7 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D51E7AEB1C3C1B2E008520D6 /* JukeboxSoundsHyper.bundle in Resources */,
+				D51E7AEB1C3C1B2E008520D6 /* Orchestra.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +440,7 @@
 /* Begin PBXTargetDependency section */
 		D5CB75AB1C29A3B800412277 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D5CB759D1C29A3B800412277 /* Jukebox-iOS */;
+			target = D5CB759D1C29A3B800412277 /* Orchestra-iOS */;
 			targetProxy = D5CB75AA1C29A3B800412277 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -456,7 +456,7 @@
 				INFOPLIST_FILE = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Orchestra;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SYMROOT = build;
@@ -474,7 +474,7 @@
 				INFOPLIST_FILE = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Orchestra;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SYMROOT = build;
@@ -588,7 +588,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Jukebox;
-				PRODUCT_NAME = Jukebox;
+				PRODUCT_NAME = Orchestra;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -611,7 +611,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Jukebox;
-				PRODUCT_NAME = Jukebox;
+				PRODUCT_NAME = Orchestra;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -626,7 +626,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/JukeboxTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Orchestra;
 			};
 			name = Debug;
 		};
@@ -640,14 +640,14 @@
 				INFOPLIST_FILE = "$(SRCROOT)/JukeboxTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Orchestra;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D52D72511C3BF710009A4426 /* Build configuration list for PBXNativeTarget "JukeboxSoundsHyper" */ = {
+		D52D72511C3BF710009A4426 /* Build configuration list for PBXNativeTarget "OrchestraSoundsHyper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D52D724F1C3BF710009A4426 /* Debug */,
@@ -656,7 +656,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5CB75981C29A3B800412277 /* Build configuration list for PBXProject "Jukebox" */ = {
+		D5CB75981C29A3B800412277 /* Build configuration list for PBXProject "Orchestra" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5CB75B01C29A3B800412277 /* Debug */,
@@ -665,7 +665,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5CB75B21C29A3B800412277 /* Build configuration list for PBXNativeTarget "Jukebox-iOS" */ = {
+		D5CB75B21C29A3B800412277 /* Build configuration list for PBXNativeTarget "Orchestra-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5CB75B31C29A3B800412277 /* Debug */,
@@ -674,7 +674,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5CB75B51C29A3B800412277 /* Build configuration list for PBXNativeTarget "Jukebox-iOS-Tests" */ = {
+		D5CB75B51C29A3B800412277 /* Build configuration list for PBXNativeTarget "Orchestra-iOS-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5CB75B61C29A3B800412277 /* Debug */,
