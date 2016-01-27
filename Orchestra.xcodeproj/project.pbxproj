@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D51E7AED1C3C6936008520D6 /* UIViewController+Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E7AEC1C3C6936008520D6 /* UIViewController+Jukebox.swift */; };
-		D5797B181C3ACB2D00CCB487 /* UIControl+Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */; };
+		D51E7AED1C3C6936008520D6 /* UIViewController+Orchestra.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51E7AEC1C3C6936008520D6 /* UIViewController+Orchestra.swift */; };
+		D5797B181C3ACB2D00CCB487 /* UIControl+Orchestra.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B171C3ACB2D00CCB487 /* UIControl+Orchestra.swift */; };
 		D57B9C4F1C4F0ACA009B01C6 /* Sugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57B9C4E1C4F0ACA009B01C6 /* Sugar.framework */; };
 		D57B9C591C4F0D90009B01C6 /* soundButton.aif in Resources */ = {isa = PBXBuildFile; fileRef = D590F7991C4DA25200C6EE92 /* soundButton.aif */; };
 		D57B9C5A1C4F0D90009B01C6 /* soundTabBar.aif in Resources */ = {isa = PBXBuildFile; fileRef = D590F79A1C4DA25200C6EE92 /* soundTabBar.aif */; };
@@ -23,7 +23,7 @@
 		D57EFABA1C59829100BB1EF7 /* ThemeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EFAB21C59824200BB1EF7 /* ThemeSpec.swift */; };
 		D57EFABB1C59829100BB1EF7 /* KapellmeisterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EFAB31C59824200BB1EF7 /* KapellmeisterSpec.swift */; };
 		D57EFABC1C59846600BB1EF7 /* OrchestraSoundsHyper.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D52D724C1C3BF710009A4426 /* OrchestraSoundsHyper.bundle */; };
-		D590F7941C4D9A2A00C6EE92 /* UITabBar+Jukebox.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7931C4D9A2A00C6EE92 /* UITabBar+Jukebox.swift */; };
+		D590F7941C4D9A2A00C6EE92 /* UITabBar+Orchestra.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7931C4D9A2A00C6EE92 /* UITabBar+Orchestra.swift */; };
 		D5CB75A91C29A3B800412277 /* Orchestra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5CB759E1C29A3B800412277 /* Orchestra.framework */; };
 		D5DF495E1C2ABD2900343F13 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF495D1C2ABD2900343F13 /* AudioPlayer.swift */; };
 		D5DF49711C2B031E00343F13 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DF496F1C2B031E00343F13 /* Sound.swift */; };
@@ -40,20 +40,20 @@
 			containerPortal = D5CB75951C29A3B800412277 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D5CB759D1C29A3B800412277;
-			remoteInfo = Jukebox;
+			remoteInfo = Orchestra;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D51E7ADA1C3C16DF008520D6 /* soundError.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundError.aif; sourceTree = "<group>"; };
 		D51E7ADD1C3C16DF008520D6 /* soundWarning.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundWarning.aif; sourceTree = "<group>"; };
-		D51E7AEC1C3C6936008520D6 /* UIViewController+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Jukebox.swift"; sourceTree = "<group>"; };
+		D51E7AEC1C3C6936008520D6 /* UIViewController+Orchestra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Orchestra.swift"; sourceTree = "<group>"; };
 		D52D724C1C3BF710009A4426 /* OrchestraSoundsHyper.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrchestraSoundsHyper.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D576E0E71C3C81540088AF89 /* soundDismiss.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundDismiss.aif; sourceTree = "<group>"; };
 		D576E0E81C3C81540088AF89 /* soundPop.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundPop.aif; sourceTree = "<group>"; };
 		D576E0E91C3C81540088AF89 /* soundPresent.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundPresent.aif; sourceTree = "<group>"; };
 		D576E0EA1C3C81540088AF89 /* soundPush.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundPush.aif; sourceTree = "<group>"; };
-		D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Jukebox.swift"; sourceTree = "<group>"; };
+		D5797B171C3ACB2D00CCB487 /* UIControl+Orchestra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Orchestra.swift"; sourceTree = "<group>"; };
 		D57B9C4E1C4F0ACA009B01C6 /* Sugar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sugar.framework; path = Carthage/Build/iOS/Sugar.framework; sourceTree = "<group>"; };
 		D57B9C611C4F0D98009B01C6 /* soundLaunch.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundLaunch.aif; sourceTree = "<group>"; };
 		D57EFAAC1C59824200BB1EF7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		D57EFAB01C59824200BB1EF7 /* AudioPlayerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerSpec.swift; sourceTree = "<group>"; };
 		D57EFAB21C59824200BB1EF7 /* ThemeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeSpec.swift; sourceTree = "<group>"; };
 		D57EFAB31C59824200BB1EF7 /* KapellmeisterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KapellmeisterSpec.swift; sourceTree = "<group>"; };
-		D590F7931C4D9A2A00C6EE92 /* UITabBar+Jukebox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBar+Jukebox.swift"; sourceTree = "<group>"; };
+		D590F7931C4D9A2A00C6EE92 /* UITabBar+Orchestra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBar+Orchestra.swift"; sourceTree = "<group>"; };
 		D590F7991C4DA25200C6EE92 /* soundButton.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundButton.aif; sourceTree = "<group>"; };
 		D590F79A1C4DA25200C6EE92 /* soundTabBar.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = soundTabBar.aif; sourceTree = "<group>"; };
 		D5CB759E1C29A3B800412277 /* Orchestra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Orchestra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,9 +131,9 @@
 		D5797B161C3ACB1700CCB487 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D5797B171C3ACB2D00CCB487 /* UIControl+Jukebox.swift */,
-				D51E7AEC1C3C6936008520D6 /* UIViewController+Jukebox.swift */,
-				D590F7931C4D9A2A00C6EE92 /* UITabBar+Jukebox.swift */,
+				D5797B171C3ACB2D00CCB487 /* UIControl+Orchestra.swift */,
+				D51E7AEC1C3C6936008520D6 /* UIViewController+Orchestra.swift */,
+				D590F7931C4D9A2A00C6EE92 /* UITabBar+Orchestra.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -244,7 +244,7 @@
 			dependencies = (
 			);
 			name = OrchestraSoundsHyper;
-			productName = JukeboxSoundsHyper;
+			productName = OrchestraSoundsHyper;
 			productReference = D52D724C1C3BF710009A4426 /* OrchestraSoundsHyper.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
@@ -263,7 +263,7 @@
 			dependencies = (
 			);
 			name = "Orchestra-iOS";
-			productName = Jukebox;
+			productName = Orchestra;
 			productReference = D5CB759E1C29A3B800412277 /* Orchestra.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -282,7 +282,7 @@
 				D5CB75AB1C29A3B800412277 /* PBXTargetDependency */,
 			);
 			name = "Orchestra-iOS-Tests";
-			productName = JukeboxTests;
+			productName = OrchestraTests;
 			productReference = D5CB75A81C29A3B800412277 /* Orchestra-iOS-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -409,11 +409,11 @@
 				D5DF49811C2B0D2100343F13 /* Kapellmeister.swift in Sources */,
 				D5DF49721C2B031E00343F13 /* Theme.swift in Sources */,
 				D5DF49821C2B0D2100343F13 /* ThemeList.swift in Sources */,
-				D51E7AED1C3C6936008520D6 /* UIViewController+Jukebox.swift in Sources */,
-				D5797B181C3ACB2D00CCB487 /* UIControl+Jukebox.swift in Sources */,
+				D51E7AED1C3C6936008520D6 /* UIViewController+Orchestra.swift in Sources */,
+				D5797B181C3ACB2D00CCB487 /* UIControl+Orchestra.swift in Sources */,
 				D5DF495E1C2ABD2900343F13 /* AudioPlayer.swift in Sources */,
 				D5DF49711C2B031E00343F13 /* Sound.swift in Sources */,
-				D590F7941C4D9A2A00C6EE92 /* UITabBar+Jukebox.swift in Sources */,
+				D590F7941C4D9A2A00C6EE92 /* UITabBar+Orchestra.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
