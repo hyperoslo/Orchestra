@@ -1,15 +1,15 @@
 Pod::Spec.new do |s|
-  s.name             = "Jukebox"
-  s.summary          = "A short description of Jukebox."
+  s.name             = "Orchestra"
+  s.summary          = "A short description of Orchestra."
   s.version          = "0.1.0"
-  s.homepage         = "https://github.com/hyperoslo/Jukebox"
+  s.homepage         = "https://github.com/hyperoslo/Orchestra"
   s.license          = {
     :type => 'MIT',
     :file => 'LICENSE.md'
   }
   s.author           = { "Hyper Interaktiv AS" => "ios@hyper.no" }
   s.source           = {
-    :git => "https://github.com/hyperoslo/Jukebox.git",
+    :git => "https://github.com/hyperoslo/Orchestra.git",
     :tag => s.version.to_s
   }
   s.social_media_url = 'https://twitter.com/hyperoslo'
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Source/**/*'
 
   s.resource_bundles = {
-    'JukeboxSoundsHyper' => ['Sounds/Hyper/*.{aif}']
+    'OrchestraSoundsHyper' => ['Sounds/Hyper/*.{aif}']
   }
 
   s.frameworks = 'UIKit', 'AVFoundation'

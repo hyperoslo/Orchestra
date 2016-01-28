@@ -2,7 +2,7 @@ import Foundation
 
 public struct Theme: Equatable {
 
-  public static let bundlePrefix = "JukeboxSounds"
+  public static let bundlePrefix = "OrchestraSounds"
 
   public let name: String
   public let audioFormat: String

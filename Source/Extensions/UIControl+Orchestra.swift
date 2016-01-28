@@ -13,21 +13,21 @@ extension UIButton {
     if self !== UIButton.self { return }
 
     dispatch_once(&Static.token) {
-      Swizzler.swizzle("initWithFrame:", cls: self, prefix: "jukebox")
-      Swizzler.swizzle("initWithCoder:", cls: self, prefix: "jukebox")
+      Swizzler.swizzle("initWithFrame:", cls: self, prefix: "orchestra")
+      Swizzler.swizzle("initWithCoder:", cls: self, prefix: "orchestra")
     }
   }
 
-  func jukebox_init(frame frame: CGRect) -> UIButton {
-    let instance = jukebox_init(frame: frame)
+  func orchestra_init(frame frame: CGRect) -> UIButton {
+    let instance = orchestra_init(frame: frame)
     instance.addTarget(instance, action: "playSound",
       forControlEvents: .TouchUpInside)
 
     return instance
   }
 
-  func jukebox_init(coder aDecoder: NSCoder) -> UIButton {
-    let instance = jukebox_init(coder: aDecoder)
+  func orchestra_init(coder aDecoder: NSCoder) -> UIButton {
+    let instance = orchestra_init(coder: aDecoder)
     instance.addTarget(instance, action: "playSound",
       forControlEvents: .TouchUpInside)
 
@@ -35,6 +35,6 @@ extension UIButton {
   }
 
   func playSound() {
-    Jukebox.engine.autoPlay(.Button)
+    Kapellmeister.engine.autoPlay(.Button)
   }
 }

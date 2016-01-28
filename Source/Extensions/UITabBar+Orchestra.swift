@@ -13,17 +13,17 @@ extension UITabBar {
     if self !== UITabBar.self { return }
 
     dispatch_once(&Static.token) {
-      Swizzler.swizzle("setSelectedItem:", cls: self, prefix: "jukebox")
+      Swizzler.swizzle("setSelectedItem:", cls: self, prefix: "orchestra")
     }
   }
 
-  func jukebox_setSelectedItem(tabBarItem: UITabBarItem?) {
+  func orchestra_setSelectedItem(tabBarItem: UITabBarItem?) {
     let selected = tabBarItem == selectedItem
 
-    jukebox_setSelectedItem(tabBarItem)
+    orchestra_setSelectedItem(tabBarItem)
 
     if selected {
-      Jukebox.engine.autoPlay(Sound.TabBar)
+      Kapellmeister.engine.autoPlay(Sound.TabBar)
     }
   }
 }

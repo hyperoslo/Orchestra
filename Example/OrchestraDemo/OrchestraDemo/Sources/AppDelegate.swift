@@ -1,6 +1,6 @@
 import UIKit
 import Hue
-import Jukebox
+import Orchestra
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    Jukebox.engine.autoPlay = true
+    Kapellmeister.engine.autoPlay = true
 
     window = UIWindow(frame: UIScreen.mainScreen().bounds)
     window?.rootViewController = navigationController

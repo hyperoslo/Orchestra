@@ -8,40 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		64791DFFBD3321074994E9B2 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25992C78F7333A1DDD2CC91 /* Pods.framework */; };
-		D5797B231C3AEBC900CCB487 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5797B221C3AEBC900CCB487 /* Project.swift */; };
-		D590F7A31C4DA3E400C6EE92 /* ProjectDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F79E1C4DA3E400C6EE92 /* ProjectDetailController.swift */; };
-		D590F7A41C4DA3E400C6EE92 /* ProjectListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F79F1C4DA3E400C6EE92 /* ProjectListController.swift */; };
-		D590F7A51C4DA3E400C6EE92 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7A01C4DA3E400C6EE92 /* MainController.swift */; };
-		D590F7A61C4DA3E400C6EE92 /* TeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7A11C4DA3E400C6EE92 /* TeamController.swift */; };
-		D590F7A71C4DA3E400C6EE92 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7A21C4DA3E400C6EE92 /* WelcomeController.swift */; };
-		D590F7A91C4DADE100C6EE92 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7A81C4DADE100C6EE92 /* Developer.swift */; };
-		D590F7AC1C4DB02300C6EE92 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7AB1C4DB02300C6EE92 /* DataSource.swift */; };
-		D590F7B21C4DC0A800C6EE92 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D590F7B11C4DC0A800C6EE92 /* TableViewCell.swift */; };
-		D5C6A0941C3ABA5D00CF6130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C6A0921C3ABA5D00CF6130 /* LaunchScreen.storyboard */; };
-		D5C6A0A11C3ABBB600CF6130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C6A09D1C3ABBB600CF6130 /* AppDelegate.swift */; };
-		D5C6A0A31C3ABBB600CF6130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C6A0A01C3ABBB600CF6130 /* Assets.xcassets */; };
-		D5D68A991C4EC813004FB2DD /* PlaygroundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D68A981C4EC813004FB2DD /* PlaygroundController.swift */; };
+		D57EFAD31C59868200BB1EF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D57EFABE1C59868200BB1EF7 /* LaunchScreen.storyboard */; };
+		D57EFAD51C59868200BB1EF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D57EFAC21C59868200BB1EF7 /* Assets.xcassets */; };
+		D57EFAD61C59868200BB1EF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EFAC41C59868200BB1EF7 /* AppDelegate.swift */; };
+		D57EFAD71C59868200BB1EF7 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EFAC61C59868200BB1EF7 /* MainController.swift */; };
+		D57EFAD81C59868200BB1EF7 /* PlaygroundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EFAC71C59868200BB1EF7 /* PlaygroundController.swift */; };
+		D57EFAD91C59868200BB1EF7 /* ProjectDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EFAC81C59868200BB1EF7 /* ProjectDetailController.swift */; };
+		D57EFADA1C59868200BB1EF7 /* ProjectListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EFAC91C59868200BB1EF7 /* ProjectListController.swift */; };
+		D57EFADB1C59868200BB1EF7 /* TeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EFACA1C59868200BB1EF7 /* TeamController.swift */; };
+		D57EFADC1C59868200BB1EF7 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EFACB1C59868200BB1EF7 /* WelcomeController.swift */; };
+		D57EFADD1C59868200BB1EF7 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EFACD1C59868200BB1EF7 /* DataSource.swift */; };
+		D57EFADE1C59868200BB1EF7 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EFACF1C59868200BB1EF7 /* Developer.swift */; };
+		D57EFADF1C59868200BB1EF7 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EFAD01C59868200BB1EF7 /* Project.swift */; };
+		D57EFAE01C59868200BB1EF7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57EFAD21C59868200BB1EF7 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0111A7FDCFDB0845038A6E5D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A25992C78F7333A1DDD2CC91 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85001CC20159C1DBF99D0CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		D5797B221C3AEBC900CCB487 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
-		D590F79E1C4DA3E400C6EE92 /* ProjectDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailController.swift; sourceTree = "<group>"; };
-		D590F79F1C4DA3E400C6EE92 /* ProjectListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListController.swift; sourceTree = "<group>"; };
-		D590F7A01C4DA3E400C6EE92 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
-		D590F7A11C4DA3E400C6EE92 /* TeamController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamController.swift; sourceTree = "<group>"; };
-		D590F7A21C4DA3E400C6EE92 /* WelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
-		D590F7A81C4DADE100C6EE92 /* Developer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
-		D590F7AB1C4DB02300C6EE92 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		D590F7B11C4DC0A800C6EE92 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		D5C6A0861C3ABA5D00CF6130 /* JukeboxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JukeboxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5C6A0931C3ABA5D00CF6130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D5C6A0951C3ABA5D00CF6130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5C6A09D1C3ABBB600CF6130 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5C6A0A01C3ABBB600CF6130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D5D68A981C4EC813004FB2DD /* PlaygroundController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundController.swift; sourceTree = "<group>"; };
+		D57EFABF1C59868200BB1EF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D57EFAC01C59868200BB1EF7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D57EFAC21C59868200BB1EF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D57EFAC41C59868200BB1EF7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D57EFAC61C59868200BB1EF7 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		D57EFAC71C59868200BB1EF7 /* PlaygroundController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundController.swift; sourceTree = "<group>"; };
+		D57EFAC81C59868200BB1EF7 /* ProjectDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailController.swift; sourceTree = "<group>"; };
+		D57EFAC91C59868200BB1EF7 /* ProjectListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListController.swift; sourceTree = "<group>"; };
+		D57EFACA1C59868200BB1EF7 /* TeamController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamController.swift; sourceTree = "<group>"; };
+		D57EFACB1C59868200BB1EF7 /* WelcomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
+		D57EFACD1C59868200BB1EF7 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		D57EFACF1C59868200BB1EF7 /* Developer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
+		D57EFAD01C59868200BB1EF7 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		D57EFAD21C59868200BB1EF7 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		D5C6A0861C3ABA5D00CF6130 /* OrchestraDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrchestraDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,48 +73,87 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D5797B211C3AEBC900CCB487 /* Models */ = {
+		D57EFABD1C59868200BB1EF7 /* OrchestraDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D5797B221C3AEBC900CCB487 /* Project.swift */,
-				D590F7A81C4DADE100C6EE92 /* Developer.swift */,
+				D57EFAC11C59868200BB1EF7 /* Resources */,
+				D57EFAC31C59868200BB1EF7 /* Sources */,
+				D57EFAE11C59869500BB1EF7 /* Supporting Files */,
 			);
-			path = Models;
+			path = OrchestraDemo;
 			sourceTree = "<group>";
 		};
-		D590F79D1C4DA3E400C6EE92 /* Controllers */ = {
+		D57EFAC11C59868200BB1EF7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D590F79E1C4DA3E400C6EE92 /* ProjectDetailController.swift */,
-				D590F79F1C4DA3E400C6EE92 /* ProjectListController.swift */,
-				D590F7A01C4DA3E400C6EE92 /* MainController.swift */,
-				D590F7A11C4DA3E400C6EE92 /* TeamController.swift */,
-				D590F7A21C4DA3E400C6EE92 /* WelcomeController.swift */,
-				D5D68A981C4EC813004FB2DD /* PlaygroundController.swift */,
+				D57EFAC21C59868200BB1EF7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D57EFAC31C59868200BB1EF7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D57EFAC41C59868200BB1EF7 /* AppDelegate.swift */,
+				D57EFAC51C59868200BB1EF7 /* Controllers */,
+				D57EFACC1C59868200BB1EF7 /* Library */,
+				D57EFACE1C59868200BB1EF7 /* Models */,
+				D57EFAD11C59868200BB1EF7 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D57EFAC51C59868200BB1EF7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D57EFAC61C59868200BB1EF7 /* MainController.swift */,
+				D57EFAC71C59868200BB1EF7 /* PlaygroundController.swift */,
+				D57EFAC81C59868200BB1EF7 /* ProjectDetailController.swift */,
+				D57EFAC91C59868200BB1EF7 /* ProjectListController.swift */,
+				D57EFACA1C59868200BB1EF7 /* TeamController.swift */,
+				D57EFACB1C59868200BB1EF7 /* WelcomeController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		D590F7AA1C4DB01B00C6EE92 /* Library */ = {
+		D57EFACC1C59868200BB1EF7 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				D590F7AB1C4DB02300C6EE92 /* DataSource.swift */,
+				D57EFACD1C59868200BB1EF7 /* DataSource.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
 		};
-		D590F7B01C4DC0A800C6EE92 /* Views */ = {
+		D57EFACE1C59868200BB1EF7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D590F7B11C4DC0A800C6EE92 /* TableViewCell.swift */,
+				D57EFACF1C59868200BB1EF7 /* Developer.swift */,
+				D57EFAD01C59868200BB1EF7 /* Project.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D57EFAD11C59868200BB1EF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D57EFAD21C59868200BB1EF7 /* TableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D57EFAE11C59869500BB1EF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D57EFABE1C59868200BB1EF7 /* LaunchScreen.storyboard */,
+				D57EFAC01C59868200BB1EF7 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D5C6A07D1C3ABA5D00CF6130 = {
 			isa = PBXGroup;
 			children = (
-				D5C6A0881C3ABA5D00CF6130 /* JukeboxDemo */,
+				D57EFABD1C59868200BB1EF7 /* OrchestraDemo */,
 				D5C6A0871C3ABA5D00CF6130 /* Products */,
 				2A9F3194705C6D77FD8ADFA1 /* Pods */,
 				D0FAFA8ED4AC0EE80722A610 /* Frameworks */,
@@ -124,56 +163,17 @@
 		D5C6A0871C3ABA5D00CF6130 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D5C6A0861C3ABA5D00CF6130 /* JukeboxDemo.app */,
+				D5C6A0861C3ABA5D00CF6130 /* OrchestraDemo.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D5C6A0881C3ABA5D00CF6130 /* JukeboxDemo */ = {
-			isa = PBXGroup;
-			children = (
-				D5C6A09C1C3ABBB600CF6130 /* Sources */,
-				D5C6A09F1C3ABBB600CF6130 /* Resources */,
-				D5C6A09B1C3ABBA900CF6130 /* Supporting Files */,
-			);
-			path = JukeboxDemo;
-			sourceTree = "<group>";
-		};
-		D5C6A09B1C3ABBA900CF6130 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D5C6A0921C3ABA5D00CF6130 /* LaunchScreen.storyboard */,
-				D5C6A0951C3ABA5D00CF6130 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D5C6A09C1C3ABBB600CF6130 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				D590F7B01C4DC0A800C6EE92 /* Views */,
-				D590F7AA1C4DB01B00C6EE92 /* Library */,
-				D590F79D1C4DA3E400C6EE92 /* Controllers */,
-				D5797B211C3AEBC900CCB487 /* Models */,
-				D5C6A09D1C3ABBB600CF6130 /* AppDelegate.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		D5C6A09F1C3ABBB600CF6130 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				D5C6A0A01C3ABBB600CF6130 /* Assets.xcassets */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D5C6A0851C3ABA5D00CF6130 /* JukeboxDemo */ = {
+		D5C6A0851C3ABA5D00CF6130 /* OrchestraDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5C6A0981C3ABA5D00CF6130 /* Build configuration list for PBXNativeTarget "JukeboxDemo" */;
+			buildConfigurationList = D5C6A0981C3ABA5D00CF6130 /* Build configuration list for PBXNativeTarget "OrchestraDemo" */;
 			buildPhases = (
 				5A2F20E3FE344AC8FD132CD2 /* Check Pods Manifest.lock */,
 				D5C6A0821C3ABA5D00CF6130 /* Sources */,
@@ -186,9 +186,9 @@
 			);
 			dependencies = (
 			);
-			name = JukeboxDemo;
-			productName = JukeboxDemo;
-			productReference = D5C6A0861C3ABA5D00CF6130 /* JukeboxDemo.app */;
+			name = OrchestraDemo;
+			productName = OrchestraDemo;
+			productReference = D5C6A0861C3ABA5D00CF6130 /* OrchestraDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +206,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D5C6A0811C3ABA5D00CF6130 /* Build configuration list for PBXProject "JukeboxDemo" */;
+			buildConfigurationList = D5C6A0811C3ABA5D00CF6130 /* Build configuration list for PBXProject "OrchestraDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -219,7 +219,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D5C6A0851C3ABA5D00CF6130 /* JukeboxDemo */,
+				D5C6A0851C3ABA5D00CF6130 /* OrchestraDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -229,8 +229,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C6A0A31C3ABBB600CF6130 /* Assets.xcassets in Resources */,
-				D5C6A0941C3ABA5D00CF6130 /* LaunchScreen.storyboard in Resources */,
+				D57EFAD51C59868200BB1EF7 /* Assets.xcassets in Resources */,
+				D57EFAD31C59868200BB1EF7 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,27 +289,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D590F7A91C4DADE100C6EE92 /* Developer.swift in Sources */,
-				D590F7A31C4DA3E400C6EE92 /* ProjectDetailController.swift in Sources */,
-				D590F7A71C4DA3E400C6EE92 /* WelcomeController.swift in Sources */,
-				D590F7AC1C4DB02300C6EE92 /* DataSource.swift in Sources */,
-				D590F7A41C4DA3E400C6EE92 /* ProjectListController.swift in Sources */,
-				D590F7B21C4DC0A800C6EE92 /* TableViewCell.swift in Sources */,
-				D5D68A991C4EC813004FB2DD /* PlaygroundController.swift in Sources */,
-				D5C6A0A11C3ABBB600CF6130 /* AppDelegate.swift in Sources */,
-				D590F7A51C4DA3E400C6EE92 /* MainController.swift in Sources */,
-				D590F7A61C4DA3E400C6EE92 /* TeamController.swift in Sources */,
-				D5797B231C3AEBC900CCB487 /* Project.swift in Sources */,
+				D57EFADE1C59868200BB1EF7 /* Developer.swift in Sources */,
+				D57EFADA1C59868200BB1EF7 /* ProjectListController.swift in Sources */,
+				D57EFADC1C59868200BB1EF7 /* WelcomeController.swift in Sources */,
+				D57EFADF1C59868200BB1EF7 /* Project.swift in Sources */,
+				D57EFAD81C59868200BB1EF7 /* PlaygroundController.swift in Sources */,
+				D57EFAD71C59868200BB1EF7 /* MainController.swift in Sources */,
+				D57EFAE01C59868200BB1EF7 /* TableViewCell.swift in Sources */,
+				D57EFAD91C59868200BB1EF7 /* ProjectDetailController.swift in Sources */,
+				D57EFADB1C59868200BB1EF7 /* TeamController.swift in Sources */,
+				D57EFADD1C59868200BB1EF7 /* DataSource.swift in Sources */,
+				D57EFAD61C59868200BB1EF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D5C6A0921C3ABA5D00CF6130 /* LaunchScreen.storyboard */ = {
+		D57EFABE1C59868200BB1EF7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D5C6A0931C3ABA5D00CF6130 /* Base */,
+				D57EFABF1C59868200BB1EF7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -403,10 +403,10 @@
 			baseConfigurationReference = 0111A7FDCFDB0845038A6E5D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = JukeboxDemo/Info.plist;
+				INFOPLIST_FILE = OrchestraDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.OrchestraDemo;
+				PRODUCT_NAME = OrchestraDemo;
 			};
 			name = Debug;
 		};
@@ -415,17 +415,17 @@
 			baseConfigurationReference = C85001CC20159C1DBF99D0CC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = JukeboxDemo/Info.plist;
+				INFOPLIST_FILE = OrchestraDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.JukeboxDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.OrchestraDemo;
+				PRODUCT_NAME = OrchestraDemo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D5C6A0811C3ABA5D00CF6130 /* Build configuration list for PBXProject "JukeboxDemo" */ = {
+		D5C6A0811C3ABA5D00CF6130 /* Build configuration list for PBXProject "OrchestraDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5C6A0961C3ABA5D00CF6130 /* Debug */,
@@ -434,7 +434,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5C6A0981C3ABA5D00CF6130 /* Build configuration list for PBXNativeTarget "JukeboxDemo" */ = {
+		D5C6A0981C3ABA5D00CF6130 /* Build configuration list for PBXNativeTarget "OrchestraDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5C6A0991C3ABA5D00CF6130 /* Debug */,
