@@ -8,4 +8,6 @@ public enum Sound: String {
   case TabBar = "soundTabBar"
   case Error = "soundError"
   case Warning = "soundWarning"
+  case RefreshBegin = "soundRefreshBegin"
+  case RefreshEnd = "soundRefreshEnd"
 }

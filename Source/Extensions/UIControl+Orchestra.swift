@@ -34,6 +34,8 @@ extension UIButton {
     return instance
   }
 
+  // MARK: - Actions
+
   func playSound() {
     Kapellmeister.engine.autoPlay(.Button)
   }

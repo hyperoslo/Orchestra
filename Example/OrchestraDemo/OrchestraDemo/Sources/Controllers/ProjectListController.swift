@@ -1,4 +1,5 @@
 import UIKit
+import Sugar
 
 class ProjectListController: UITableViewController {
 
@@ -35,6 +36,10 @@ class ProjectListController: UITableViewController {
     tableView.tableFooterView = UIView(frame: CGRect.zero)
     tableView.dataSource = dataSource
     tableView.delegate = dataSource
+
+    refreshControl = UIRefreshControl()
+    refreshControl?.addTarget(self, action: "refreshData:",
+      forControlEvents: .ValueChanged)
   }
 
   func configureCell(project: Project, cell: TableViewCell) {
@@ -43,6 +48,12 @@ class ProjectListController: UITableViewController {
   }
 
   // MARK: - Actions
+
+  func refreshData(refreshControl: UIRefreshControl) {
+    delay(2.0) {
+      refreshControl.endRefreshing()
+    }
+  }
 
   func selectCell(project: Project) {
     let controller = ProjectDetailController(project: project)
